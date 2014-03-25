@@ -5,25 +5,25 @@
 @import "base/_palette";
 @import "base/_variables";
 @import "base/_mixins";
-@import "base/_reuse";
 @import "base/_images";
-@import "base/_typography";
+@import "base/_reuse";
 @import "base/_root";
+@import "base/_typography";
 
 // First loading error & loading template classes
 @import "modules/_loading";
 @import "modules/_error";
 
-//Loading all components
-@import "components/_buttons";
-@import "components/_icons";
-@import "components/_links";
-@import "components/_input-fields";
-@import "components/_search-bar";
+//Loading all UI elements
+@import "elements/_buttons";
+@import "elements/_icons";
+@import "elements/_links";
+@import "elements/_input-fields";
 
-// Loading modules
-@import "modules/_nav";
-@import "modules/_menu";
-@import "modules/_sidebar";
+// Loading components
+@import "components/_search-bar";
+@import "components/_nav";
+@import "components/_menu";
+@import "components/_sidebar";
 
 // Loading template/page specific classes
