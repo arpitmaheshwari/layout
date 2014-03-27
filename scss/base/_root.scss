@@ -1,5 +1,7 @@
 html{
 	min-height: 100%;
+	@include rem(font-size,14px,$_base-size);
+	@include rem(padding,14px 20px 70px);
 }
 body{
 	

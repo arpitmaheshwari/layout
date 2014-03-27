@@ -1,5 +1,8 @@
-// Loading normalize
+// Loading libraries
+// Noramlize.css saved in a scss file
 @import "libs/normalize";
+// Collectioin of mixins
+@import "libs/bourbon/_bourbon";
 
 // Loading base/generic classes
 @import "base/_palette";
@@ -25,5 +28,8 @@
 @import "components/_nav";
 @import "components/_menu";
 @import "components/_sidebar";
+
+// Loading module specific classes
+@import "modules/_alert-msg";
 
 // Loading template/page specific classes
