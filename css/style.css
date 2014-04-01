@@ -362,9 +362,7 @@ th {
 
 html {
   min-height: 100%;
-  font-size: 14px;
   font-size: 1rem;
-  padding: 14px 20px 70px;
   padding: 0.875rem 1.25rem 4.375rem; }
 
 .input-text {

@@ -7,7 +7,11 @@
 // Loading base/generic classes
 @import "base/_palette";
 @import "base/_variables";
-@import "base/_mixins";
+
+// Loading all the mixins
+@import "base/mixins/_bourbon-rem";
+@import "base/mixins/_size";
+
 @import "base/_images";
 @import "base/_reuse";
 @import "base/_root";
