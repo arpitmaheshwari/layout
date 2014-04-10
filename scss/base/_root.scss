@@ -1,8 +1,11 @@
+*{	
+	box-sizing: border-box;	
+}
 html{
 	min-height: 100%;
-	@include rem(font-size,14px,$_base-size);
-	@include rem(padding,14px 20px 70px);
+	@include ptc-size(font-size,14px,$_base-size);
+
 }
 body{
-	
+	text-align: center;
 }

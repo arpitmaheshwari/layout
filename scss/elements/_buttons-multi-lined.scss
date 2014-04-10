@@ -1,0 +1,37 @@
+.multiLinedButton{
+	display: inline-block;
+	text-align: center;
+	background: #AAAAAA;
+	padding: 5px;
+	width: 50%;
+}
+.multiLinedButton-left{
+	@extend .multiLinedButton;
+	border-radius: 15px 0 0 15px;
+}
+input[type="radio"]:checked +label{
+	background: #DDDDDD;
+}
+.multiLinedButton-right{
+	@extend .multiLinedButton;
+	border-radius: 0 15px 15px 0;
+	margin-left: -4px;
+	border-left: 2px solid $white;
+}
+.multiLinedButton-right:checked{
+	background: #DDDDDD;
+}
+.multiLinedButton-smallerText{
+	@include ptc-size(font-size , 9px);
+}
+.multiLinedButton-largerText{
+	@include ptc-size(font-size , 13px);
+}
+// Adding a line-break before larger text
+.multiLinedButton-largerText:before { 
+	content: '\00000A'; 
+	white-space: pre;
+}
+.multiLinedButton-container{
+	padding: 18px 0 15px;
+}	
