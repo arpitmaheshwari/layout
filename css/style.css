@@ -377,40 +377,6 @@ body {
   margin-bottom: 10px;
   border-radius: 5px; }
 
-.multiLinedButton, .multiLinedButton-left, .multiLinedButton-right {
-  display: inline-block;
-  text-align: center;
-  background: #AAAAAA;
-  padding: 5px;
-  width: 50%; }
-
-.multiLinedButton-left {
-  border-radius: 15px 0 0 15px; }
-
-input[type="radio"]:checked + label {
-  background: #DDDDDD; }
-
-.multiLinedButton-right {
-  border-radius: 0 15px 15px 0;
-  margin-left: -4px;
-  border-left: 2px solid white; }
-
-.multiLinedButton-right:checked {
-  background: #DDDDDD; }
-
-.multiLinedButton-smallerText {
-  font-size: 0.5625rem; }
-
-.multiLinedButton-largerText {
-  font-size: 0.8125rem; }
-
-.multiLinedButton-largerText:before {
-  content: '\00000A';
-  white-space: pre; }
-
-.multiLinedButton-container {
-  padding: 18px 0 15px; }
-
 .basic-input-field {
   width: 100%;
   padding: 9px;
@@ -432,17 +398,7 @@ input[type="radio"]:checked + label {
   background: #ff851b;
   color: white; }
 
-.basic-dropdown {
-  width: 100%;
-  padding: 8px;
-  margin-top: 8px; }
-
 .banner-image {
   width: 100%;
   padding: 10px 5px 0;
   max-width: 500px; }
-
-.login-module {
-  padding: 0 20px;
-  max-width: 500px;
-  margin: auto; }
