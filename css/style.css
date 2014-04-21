@@ -402,3 +402,97 @@ body {
   width: 100%;
   padding: 10px 5px 0;
   max-width: 500px; }
+
+.login-module {
+  position: relative;
+  background: #aaa;
+  height: 100%; }
+
+.login-container {
+  background: #fff;
+  min-height: 100%;
+  position: relative;
+  z-index: 10;
+  /* reset transforms (Chrome bug) */
+  -webkit-transition: translateZ(0) translateX(0) rotateY(0deg);
+  -moz-transition: translateZ(0) translateX(0) rotateY(0deg);
+  transition: translateZ(0) translateX(0) rotateY(0deg); }
+
+.login-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  /* the transition delay of the height needs to be synced with the container transition time */
+  -webkit-transition: opacity 0.4s, height 0s 0.4s;
+  -moz-transition: opacity 0.4s, height 0s 0.4s;
+  transition: opacity 0.4s, height 0s 0.4s; }
+
+.login-wrapper {
+  position: relative; }
+
+.login-module.modalview {
+  position: fixed;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  perspective: 1500px; }
+
+.modalview .login-container {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+.modalview .login-wrapper {
+  -webkit-transform: translateZ(-1px);
+  /* solves a rendering bug in Chrome on Windows */ }
+
+.animate .container::after {
+  opacity: 1;
+  height: 101%;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+.login-nav {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+
+.effect-open-door {
+  background: #b8b6b4; }
+
+.effect-open-door .login-container {
+  -webkit-transform: transform 0.4s;
+  -moz-transform: transform 0.4s;
+  -ms-transform: transform 0.4s;
+  -o-transform: transform 0.4s;
+  transform: transform 0.4s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
+.effect-open-door.animate .login-container {
+  -webkit-transition: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  -moz-transition: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  transition: translateZ(-1500px) translateX(100%) rotateY(-45deg); }
+
+.no-csstransforms3d .effect-open-door.animate .login-container {
+  left: 75%; }

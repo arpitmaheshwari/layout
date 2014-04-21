@@ -1,0 +1,21 @@
+.effect-open-door{
+	background: #b8b6b4;//#e96e4f
+}
+.effect-open-door{
+	.login-container{
+		@include transform(transform 0.4s);
+		@include transform-origin(50% 50%);
+	}
+}
+.effect-open-door.animate{
+	.login-container{
+		@include transition(translateZ(-1500px) translateX(100%) rotateY(-45deg));
+	}
+}
+.no-csstransforms3d{
+	.effect-open-door.animate{
+		.login-container{
+			left : 75%;
+		}
+	}
+}

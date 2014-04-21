@@ -1,0 +1,54 @@
+.login-module{
+	position: relative;
+	background: #aaa;
+	height: 100%;
+}
+.login-container{
+	background: #fff;
+	min-height: 100%;
+	position: relative;
+	z-index: 10;
+	/* reset transforms (Chrome bug) */
+	@include transition(translateZ(0) translateX(0) rotateY(0deg));
+
+}
+.login-container::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	opacity: 0;
+	background: rgba(0,0,0,0.2);
+	/* the transition delay of the height needs to be synced with the container transition time */
+	@include transition ( opacity 0.4s, height 0s 0.4s);
+}
+.login-wrapper{
+	position: relative;
+}
+
+.login-module.modalview{
+	position: fixed;
+	@include perspective(1500px);
+}
+
+.modalview{
+	.login-container{
+		position: absolute;
+		overflow: hidden;
+		height: 100%;
+		cursor: pointer;
+		@include backface-visibility(hidden);
+	}
+
+	.login-wrapper{
+		-webkit-transform: translateZ(-1px); /* solves a rendering bug in Chrome on Windows */
+	}
+}
+
+.animate .container::after {
+	opacity: 1;
+	height: 101%;
+	@include transition(opacity 0.3s)
+}
