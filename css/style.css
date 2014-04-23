@@ -371,12 +371,35 @@ body {
   min-height: 100%;
   text-align: center; }
 
-.basic-button-field {
+.button-column, .login-button-set {
+  width: 150px;
+  margin: auto; }
+
+.button-bordered, .button-bordered-transparent, .button-bordered-pink, .button-bordered-green {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   width: 100%;
-  padding: 10px 5px;
-  margin-top: 17px;
-  margin-bottom: 10px;
-  border-radius: 5px; }
+  border: 2px solid white;
+  margin: 10px auto;
+  padding: 6px;
+  color: white;
+  background: transparent; }
+
+.button-bordered-transparent {
+  background: transparent; }
+
+.button-bordered-pink {
+  background: #e94f57; }
+
+.button-bordered-green {
+  background: #66FF66; }
+
+input {
+  display: block;
+  margin: 7px auto; }
 
 .basic-input-field {
   width: 100%;
@@ -406,13 +429,16 @@ body {
 
 .login-module {
   position: relative;
-  background: #aaa;
+  background: #e94f57;
   width: 100%;
   height: 100%; }
 
+.login-button-set {
+  padding-top: 100px; }
+
 .login-container {
   background: #fff;
-  min-height: 100%;
+  height: 100%;
   position: relative;
   z-index: 10;
   /* reset transforms (Chrome bug) */
@@ -421,20 +447,6 @@ body {
   -ms-transform: translateZ(0) translateX(0) rotateY(0deg);
   -o-transform: translateZ(0) translateX(0) rotateY(0deg);
   transform: translateZ(0) translateX(0) rotateY(0deg); }
-
-.login-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0px;
-  opacity: 0;
-  background: rgba(0, 0, 0, 0.2);
-  /* the transition delay of the height needs to be synced with the container transition time */
-  -webkit-transition: opacity 0.4s, height 0s 0.4s;
-  -moz-transition: opacity 0.4s, height 0s 0.4s;
-  transition: opacity 0.4s, height 0s 0.4s; }
 
 .login-wrapper {
   position: relative; }
@@ -457,14 +469,6 @@ body {
   -webkit-transform: translateZ(-1px);
   /* solves a rendering bug in Chrome on Windows */ }
 
-.login-animate .container::after {
-  content: '';
-  opacity: 1;
-  height: 101%;
-  -webkit-transition: opacity 0.3s;
-  -moz-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
-
 .login-nav {
   position: absolute;
   top: 50%;
@@ -480,17 +484,15 @@ body {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
-.effect-open-door {
-  background: #b8b6b4; }
-  .effect-open-door .login-container {
-    -webkit-transition: -webkit-transform 0.4s;
-    -moz-transition: -moz-transform 0.4s;
-    transition: transform 0.4s;
-    -webkit-transform-origin: 50% 50%;
-    -moz-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    -o-transform-origin: 50% 50%;
-    transform-origin: 50% 50%; }
+.effect-open-door .login-container {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
 
 .effect-open-door.login-animate .login-container {
   -webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
@@ -522,13 +524,13 @@ body {
   transform: translateX(0); }
 
 .effect-open-door.login-animate .login-nav *:nth-child(2) {
-  -webkit-transition-delay: 0.04s;
-  transition-delay: 0.04s; }
+  -webkit-transition-delay: 0.06s;
+  transition-delay: 0.06s; }
 
 .effect-open-door.login-animate .login-nav *:nth-child(3) {
-  -webkit-transition-delay: 0.08s;
-  transition-delay: 0.08s; }
-
-.effect-open-door.login-animate .login-nav *:nth-child(4) {
   -webkit-transition-delay: 0.12s;
   transition-delay: 0.12s; }
+
+.effect-open-door.login-animate .login-nav *:nth-child(4) {
+  -webkit-transition-delay: 0.18s;
+  transition-delay: 0.18s; }

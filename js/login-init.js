@@ -17,6 +17,7 @@
 	function initLogin(){
 		// Saving all the DOM element to avoid frequent DOM traversing
 		var showLoginMenu = document.getElementById('show-login-menu'),
+			showLoginForm = document.getElementById('show-login-form'),
 			loginModule = document.getElementsByClassName('login-module')[0],
 			loginContainer = document.getElementsByClassName('login-container')[0],
 			loginWrapper = document.getElementsByClassName('login-wrapper')[0];
@@ -43,7 +44,7 @@
 		});
 
 		loginContainer.addEventListener(clickevent , function(){
-			if($(loginModule).hasClass('animate')){
+			if($(loginModule).hasClass('login-animate')){
 				var onTransitionEnd = function(e){
 					if(supportTransitions && (e.target.className !== 'login-container' || e.propertyName.indexOf('transform') == -1) ){return};
 					
@@ -67,6 +68,10 @@
 				// Finally removing login-animate class
 				$(loginModule).removeClass('login-animate');
 			}
+		});
+
+		showLoginForm.addEventListener(clickevent, function(){
+			$(loginModule).removeClass('modalview login-animate');
 		});
 	}
 
