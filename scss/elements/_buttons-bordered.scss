@@ -1,21 +1,9 @@
-.button-bordered{
-	@include appearance(none);
-	width: 100%;
-	border: 2px solid $white;
-	margin: 10px auto;
-	padding: 6px;
-	color: white;
-	background: transparent;
-}
 .button-bordered-transparent{
-	@extend .button-bordered;
-	background: transparent;
+	@include ptc-button-bordered;
 }
 .button-bordered-pink{
-	@extend .button-bordered;
-	background: #e94f57;
+	@include ptc-button-bordered(#e94f57);
 }
 .button-bordered-green{
-	@extend .button-bordered;
-	background: #66FF66;
+	@include ptc-button-bordered(#66FF66);
 }

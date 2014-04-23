@@ -1,7 +1,7 @@
 // Loading libraries
 // Noramlize.css saved in a scss file
 @import "libs/normalize";
-// Collectioin of mixins
+// Collection of mixins
 @import "libs/bourbon/_bourbon";
 
 // Loading base/generic classes
@@ -11,6 +11,7 @@
 // Loading all the mixins
 @import "base/mixins/_bourbon-rem";
 @import "base/mixins/_size";
+@import "base/mixins/_buttons-bordered";
 
 @import "base/_images";
 @import "base/_reuse";

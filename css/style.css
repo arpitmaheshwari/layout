@@ -375,7 +375,7 @@ body {
   width: 150px;
   margin: auto; }
 
-.button-bordered, .button-bordered-transparent, .button-bordered-pink, .button-bordered-green {
+.button-bordered-transparent {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -388,14 +388,31 @@ body {
   color: white;
   background: transparent; }
 
-.button-bordered-transparent {
-  background: transparent; }
-
 .button-bordered-pink {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid white;
+  margin: 10px auto;
+  padding: 6px;
+  color: white;
   background: #e94f57; }
 
 .button-bordered-green {
-  background: #66FF66; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid white;
+  margin: 10px auto;
+  padding: 6px;
+  color: white;
+  background: #66ff66; }
 
 input {
   display: block;
