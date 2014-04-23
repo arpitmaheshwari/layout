@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" width="device-width" initial-scale="1" />
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	</head>
 	<body>
 		<header>
-			<img class="banner-image" src="../images/precision-lms-logo.png" alt="">
+			<!-- <img class="banner-image" src="../images/precision-lms-logo.png" alt=""> -->
 		</header>
 		<main>
-			<section class="login-module">
+			<section class="login-module effect-open-door">
 				<!-- Login form -->
 				<div class="login-container">
 		            <div class="login-wrapper"><!-- wrapper needed for scroll -->
-		            	
+						<input type="text" name="" value="" placeholder="Username">
+						<input type="password" name="" value="" placeholder="Password">			
+
+						<div>
+							<input type="submit" name="" value="Login">	
+			            	<input type="button" name="" value="More" id="show-login-menu">
+						</div>
 			        </div><!-- wrapper -->
 		        </div><!-- /container -->
 
 				<!-- Login Nav -->
+				<style>
+					button{display: block;margin:7px ;}
+					input{display: block;margin:7px auto;}
+				</style>
 				<nav class="login-nav">
-					
+					<button type="button">Back</button>
+					<button type="button">Languages</button>
+					<button type="button">Forgot Password</button>
+					<button type="button">About</button>
 				</nav>
 			</section>
 		</main>
 		<footer>
 		</footer>
+		<script type="text/javascript" src="../js/libs/modernizr.custom.57422.js"></script>
+		<script type="text/javascript" src="../js/libs/jQuery v1.11.0.js"></script>
+		<script type="text/javascript" src="../js/util.js"></script>
+		<script type="text/javascript" src="../js/login-init.js"></script>
 		<script type="text/javascript" src="../js/libs/rem.min.js"></script>
 	</body>
 </html>

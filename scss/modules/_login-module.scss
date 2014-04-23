@@ -1,6 +1,7 @@
 .login-module{
 	position: relative;
 	background: #aaa;
+	width: 100%;
 	height: 100%;
 }
 .login-container{
@@ -9,7 +10,7 @@
 	position: relative;
 	z-index: 10;
 	/* reset transforms (Chrome bug) */
-	@include transition(translateZ(0) translateX(0) rotateY(0deg));
+	@include transform(translateZ(0) translateX(0) rotateY(0deg));
 
 }
 .login-container::after {
@@ -37,6 +38,7 @@
 	.login-container{
 		position: absolute;
 		overflow: hidden;
+		width: 100%;
 		height: 100%;
 		cursor: pointer;
 		@include backface-visibility(hidden);
@@ -47,7 +49,8 @@
 	}
 }
 
-.animate .container::after {
+.login-animate .container::after {
+	content: '';
 	opacity: 1;
 	height: 101%;
 	@include transition(opacity 0.3s)

@@ -364,10 +364,11 @@ th {
   box-sizing: border-box; }
 
 html {
-  min-height: 100%;
   font-size: 1rem; }
 
 body {
+  width: 100%;
+  min-height: 100%;
   text-align: center; }
 
 .basic-button-field {
@@ -406,6 +407,7 @@ body {
 .login-module {
   position: relative;
   background: #aaa;
+  width: 100%;
   height: 100%; }
 
 .login-container {
@@ -414,9 +416,11 @@ body {
   position: relative;
   z-index: 10;
   /* reset transforms (Chrome bug) */
-  -webkit-transition: translateZ(0) translateX(0) rotateY(0deg);
-  -moz-transition: translateZ(0) translateX(0) rotateY(0deg);
-  transition: translateZ(0) translateX(0) rotateY(0deg); }
+  -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
+  -moz-transform: translateZ(0) translateX(0) rotateY(0deg);
+  -ms-transform: translateZ(0) translateX(0) rotateY(0deg);
+  -o-transform: translateZ(0) translateX(0) rotateY(0deg);
+  transform: translateZ(0) translateX(0) rotateY(0deg); }
 
 .login-container::after {
   content: '';
@@ -444,6 +448,7 @@ body {
 .modalview .login-container {
   position: absolute;
   overflow: hidden;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   -webkit-backface-visibility: hidden;
@@ -452,7 +457,8 @@ body {
   -webkit-transform: translateZ(-1px);
   /* solves a rendering bug in Chrome on Windows */ }
 
-.animate .container::after {
+.login-animate .container::after {
+  content: '';
   opacity: 1;
   height: 101%;
   -webkit-transition: opacity 0.3s;
@@ -476,23 +482,53 @@ body {
 
 .effect-open-door {
   background: #b8b6b4; }
+  .effect-open-door .login-container {
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
 
-.effect-open-door .login-container {
-  -webkit-transform: transform 0.4s;
-  -moz-transform: transform 0.4s;
-  -ms-transform: transform 0.4s;
-  -o-transform: transform 0.4s;
-  transform: transform 0.4s;
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  transform-origin: 50% 50%; }
+.effect-open-door.login-animate .login-container {
+  -webkit-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  -moz-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  -ms-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  -o-transform: translateZ(-1500px) translateX(100%) rotateY(-45deg);
+  transform: translateZ(-1500px) translateX(100%) rotateY(-45deg); }
 
-.effect-open-door.animate .login-container {
-  -webkit-transition: translateZ(-1500px) translateX(100%) rotateY(-45deg);
-  -moz-transition: translateZ(-1500px) translateX(100%) rotateY(-45deg);
-  transition: translateZ(-1500px) translateX(100%) rotateY(-45deg); }
-
-.no-csstransforms3d .effect-open-door.animate .login-container {
+.no-csstransforms3d .effect-open-door.login-animate .login-container {
   left: 75%; }
+
+.effect-open-door .login-nav * {
+  opacity: 0;
+  -webkit-transform: translateX(-150px);
+  -moz-transform: translateX(-150px);
+  -ms-transform: translateX(-150px);
+  -o-transform: translateX(-150px);
+  transform: translateX(-150px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.4s;
+  transition: transform 0.4s, opacity 0.4s; }
+
+.effect-open-door.login-animate .login-nav * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0); }
+
+.effect-open-door.login-animate .login-nav *:nth-child(2) {
+  -webkit-transition-delay: 0.04s;
+  transition-delay: 0.04s; }
+
+.effect-open-door.login-animate .login-nav *:nth-child(3) {
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s; }
+
+.effect-open-door.login-animate .login-nav *:nth-child(4) {
+  -webkit-transition-delay: 0.12s;
+  transition-delay: 0.12s; }

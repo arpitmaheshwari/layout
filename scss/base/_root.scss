@@ -2,10 +2,11 @@
 	box-sizing: border-box;	
 }
 html{
-	min-height: 100%;
 	@include ptc-size(font-size,14px,$_base-size);
 
 }
 body{
+	width: 100%;
+	min-height: 100%;
 	text-align: center;
 }
