@@ -545,12 +545,25 @@ body {
 
 .effect-open-door.login-animate .login-nav *:nth-child(2) {
   -webkit-transition-delay: 0.06s;
+  -moz-transition-delay: 0.06s;
   transition-delay: 0.06s; }
 
 .effect-open-door.login-animate .login-nav *:nth-child(3) {
   -webkit-transition-delay: 0.12s;
+  -moz-transition-delay: 0.12s;
   transition-delay: 0.12s; }
 
 .effect-open-door.login-animate .login-nav *:nth-child(4) {
   -webkit-transition-delay: 0.18s;
+  -moz-transition-delay: 0.18s;
   transition-delay: 0.18s; }
+
+.effect-open-door.login-animate .login-nav *:nth-child(5) {
+  -webkit-transition-delay: 0.24s;
+  -moz-transition-delay: 0.24s;
+  transition-delay: 0.24s; }
+
+.effect-open-door.login-animate .login-nav *:nth-child(6) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s; }

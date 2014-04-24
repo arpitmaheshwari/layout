@@ -26,15 +26,5 @@
 	opacity: 1;
 	@include transform (translateX(0));
 }
-.effect-open-door.login-animate .login-nav *:nth-child(2) {
-	-webkit-transition-delay: 0.06s;
-	transition-delay: 0.06s;
-}
-.effect-open-door.login-animate .login-nav *:nth-child(3) {
-	-webkit-transition-delay: 0.12s;
-	transition-delay: 0.12s;
-}
-.effect-open-door.login-animate .login-nav *:nth-child(4) {
-	-webkit-transition-delay: 0.18s;
-	transition-delay: 0.18s;
-}
+
+@include ptc-login-nav-elements-transition($login-nav-element-count);
