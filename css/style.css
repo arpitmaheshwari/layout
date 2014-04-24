@@ -382,9 +382,11 @@ body {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border: 2px solid white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
   margin: 10px auto;
-  padding: 6px;
+  padding: 7px;
   color: white;
   background: transparent; }
 
@@ -395,9 +397,11 @@ body {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border: 2px solid white;
+  border-width: 0;
+  border-style: solid;
+  border-color: white;
   margin: 10px auto;
-  padding: 6px;
+  padding: 7px;
   color: white;
   background: #e94f57; }
 
@@ -408,9 +412,11 @@ body {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border: 2px solid white;
+  border-width: 0;
+  border-style: solid;
+  border-color: white;
   margin: 10px auto;
-  padding: 6px;
+  padding: 7px;
   color: white;
   background: #66ff66; }
 

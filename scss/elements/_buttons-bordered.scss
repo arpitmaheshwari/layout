@@ -2,8 +2,8 @@
 	@include ptc-button-bordered;
 }
 .button-bordered-pink{
-	@include ptc-button-bordered(#e94f57);
+	@include ptc-button-bordered(#e94f57,0);
 }
 .button-bordered-green{
-	@include ptc-button-bordered(#66FF66);
+	@include ptc-button-bordered(#66FF66,0);
 }

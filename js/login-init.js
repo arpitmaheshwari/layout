@@ -40,7 +40,6 @@
 
 			// And set login wrapper to animate by adding login-animate class
 			setTimeout(function(){$(loginModule).addClass('login-animate')},25);
-
 		});
 
 		loginContainer.addEventListener(clickevent , function(){
@@ -71,7 +70,7 @@
 		});
 
 		showLoginForm.addEventListener(clickevent, function(){
-			$(loginModule).removeClass('modalview login-animate');
+			$(loginModule).removeClass('login-animate modalview');
 		});
 	}
 
