@@ -371,10 +371,6 @@ body {
   min-height: 100%;
   text-align: center; }
 
-.button-column, .login-button-set {
-  width: 150px;
-  margin: auto; }
-
 .button-bordered-transparent {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -386,7 +382,7 @@ body {
   border-style: solid;
   border-color: white;
   margin: 10px auto;
-  padding: 7px;
+  padding: 10px;
   color: white;
   background: transparent; }
 
@@ -401,7 +397,7 @@ body {
   border-style: solid;
   border-color: white;
   margin: 10px auto;
-  padding: 7px;
+  padding: 10px;
   color: white;
   background: #e94f57; }
 
@@ -416,34 +412,27 @@ body {
   border-style: solid;
   border-color: white;
   margin: 10px auto;
-  padding: 7px;
+  padding: 10px;
   color: white;
-  background: #66ff66; }
+  background: #18ff18; }
 
-input {
-  display: block;
-  margin: 7px auto; }
+.hidden-label {
+  visibility: none;
+  height: 7px;
+  overflow: hidden; }
 
 .basic-input-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   width: 100%;
-  padding: 9px;
-  margin-top: 8px;
-  border-radius: 5px; }
-
-.basic-input-field + div {
-  font-size: 0.625rem;
-  padding: 0 5px;
-  border-radius: 0 0 5px 5px; }
-
-.basic-input-field:focus {
-  border: 2px solid #ff851b;
-  border-radius: 5px 5px 0 0;
-  outline: none; }
-
-.basic-input-field:focus + div {
-  visibility: visible;
-  background: #ff851b;
-  color: white; }
+  border-width: 2px;
+  border-style: solid;
+  border-color: silver;
+  margin-bottom: 7px;
+  padding: 7px; }
 
 .banner-image {
   width: 100%;
@@ -457,7 +446,13 @@ input {
   height: 100%; }
 
 .login-button-set {
+  width: 62%;
+  margin: auto;
   padding-top: 100px; }
+
+.login-input-set {
+  width: 68.75%;
+  margin: auto; }
 
 .login-container {
   background: #fff;
@@ -505,7 +500,9 @@ input {
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
+  transform-style: preserve-3d;
+  width: 160px;
+  margin: auto; }
 
 .effect-open-door .login-container {
   -webkit-transition: -webkit-transform 0.4s;

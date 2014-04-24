@@ -14,9 +14,13 @@
 				<!-- Login form -->
 				<div class="login-container">
 		            <div class="login-wrapper"><!-- wrapper needed for scroll -->
-						<input type="text" name="" value="" placeholder="Username">
-						<input type="password" name="" value="" placeholder="Password">			
+						<div class="login-input-set">		
+							<!-- <label class="hidden-label" for="login-username">Username</label> -->
+							<input type="text" name="login-username" value="" placeholder="Username" class="basic-input-field">
 
+							<!-- <label class="hidden-label" for="login-password">Password</label> -->
+							<input type="password" name="login-password" value="" placeholder="Password" class="basic-input-field">			
+						</div>
 						<div class="login-button-set">
 							<input type="submit" name="" value="Login" class="button-bordered-green" />	
 			            	<input type="button" name="" value="More" class="button-bordered-pink" id="show-login-menu" />
@@ -26,12 +30,10 @@
 
 				<!-- Login Nav -->
 				<nav class="login-nav">
-					<div class="button-column">
 						<button type="button" class="button-bordered-transparent" id="show-login-form">Back</button>
 						<button type="button" class="button-bordered-transparent">Can't Login</button>
 						<button type="button" class="button-bordered-transparent">Languages</button>
 						<button type="button" class="button-bordered-transparent">About</button>
-					</div>
 				</nav>
 			</section>
 		</main>

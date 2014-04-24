@@ -5,8 +5,13 @@
 	height: 100%;
 }
 .login-button-set{
-	@extend .button-column;
+	width: 62%;
+	margin: auto;
 	padding-top: 100px;
+}
+.login-input-set{
+	width: 68.75%;
+	margin: auto;
 }
 .login-container{
 	background: #fff;

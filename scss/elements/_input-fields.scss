@@ -1,23 +1,26 @@
-input{display: block;margin:7px auto;}
 .basic-input-field{
-	width: 100%;
-	padding: 9px;
-	margin-top: 8px ;
-	border-radius: 5px;
+	@include ptc-text-input;
 }
-.basic-input-field+div{
-	@include ptc-size(font-size,10px);
-	padding: 0 5px;
-	border-radius: 0 0 5px 5px;
-}	
-.basic-input-field:focus{
-	border: 2px solid $orange;
-	border-radius: 5px 5px 0 0;
-	outline: none;
-}
-.basic-input-field:focus+div{
-	visibility: visible;
-	background: $orange;
-	color: $white;
-	// @include ptc-size(font-size,10px)
-}	
+// input{display: block;margin:7px auto;}
+// .basic-input-field{
+// 	width: 100%;
+// 	padding: 9px;
+// 	margin-top: 8px ;
+// 	border-radius: 5px;
+// }
+// .basic-input-field+div{
+// 	@include ptc-size(font-size,10px);
+// 	padding: 0 5px;
+// 	border-radius: 0 0 5px 5px;
+// }	
+// .basic-input-field:focus{
+// 	border: 2px solid $orange;
+// 	border-radius: 5px 5px 0 0;
+// 	outline: none;
+// }
+// .basic-input-field:focus+div{
+// 	visibility: visible;
+// 	background: $orange;
+// 	color: $white;
+// 	// @include ptc-size(font-size,10px)
+// }

@@ -4,4 +4,6 @@
 	left: 25%;
 	@include transform(translateY(-50%));
 	@include transform-style(preserve-3d);
+	width: 160px;
+	margin: auto;
 }
