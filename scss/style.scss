@@ -34,6 +34,7 @@
 // @import "elements/_drop-down";
 
 // Loading components
+@import "components/_login-form";
 @import "components/_search-bar";
 @import "components/_nav";
 @import "components/_menu";
@@ -42,6 +43,7 @@
 // Loading module specific classes
 @import "modules/_alert-msg";
 @import "modules/_header";
+@import "modules/_footer";
 @import "modules/_login-module";
 @import "modules/_login-nav";
 @import "modules/_login-transition";

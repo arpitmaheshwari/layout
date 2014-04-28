@@ -3,10 +3,14 @@
 }
 html{
 	@include ptc-size(font-size,14px,$_base-size);
-
+	height: 100%;
 }
 body{
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 	text-align: center;
+}
+main{
+	padding-top: $header-height;
+	height: 100%;
 }

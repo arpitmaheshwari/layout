@@ -1,4 +1,4 @@
-@mixin ptc-text-input($border-width: 2px,$margin-bottom: 7px, $border-color: $silver , $padding: 7px){
+@mixin ptc-text-input($border-width: 2px,$margin-bottom: 7px, $border-color: $white , $padding: 7px){
 	@include appearance(none);
 	width: 100%;
 	border-width: $border-width;
