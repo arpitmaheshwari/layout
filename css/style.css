@@ -390,9 +390,7 @@ main {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
+  border: 2px solid white;
   margin: 10px auto;
   padding: 10px;
   color: white;
@@ -405,9 +403,7 @@ main {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
+  border: 2px solid white;
   margin: 10px auto;
   padding: 10px;
   color: white;
@@ -420,13 +416,14 @@ main {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border-width: 2px;
-  border-color: white;
-  border-style: solid;
+  border: 2px solid white;
   margin: 10px auto;
   padding: 10px;
   color: white;
-  background: #18ff18; 
+  background: #34e234; 
+  background: #00fb00;
+  background: #75e94f;
+  background: #33ff33;
 }
 
 a {
