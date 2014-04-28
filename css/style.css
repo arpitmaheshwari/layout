@@ -365,6 +365,9 @@ th {
 .no-visibility {
   visibility: hidden; }
 
+.white-color {
+  color: white; }
+
 * {
   box-sizing: border-box; }
 
@@ -422,8 +425,20 @@ main {
   color: white;
   background: #33ff33; }
 
-a {
-  color: white; }
+.link-bordered-transparent {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 2px solid white;
+  margin: 10px auto;
+  padding: 10px;
+  color: white;
+  background: transparent; }
 
 .hidden-label {
   visibility: none;

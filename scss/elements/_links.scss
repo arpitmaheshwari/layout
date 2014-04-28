@@ -1,1 +1,5 @@
-a{color: white}
+.link-bordered-transparent{
+	display: inline-block;
+	text-decoration: none;
+	@include ptc-button-bordered;
+}
