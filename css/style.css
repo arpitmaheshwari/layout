@@ -445,7 +445,8 @@ a {
 
 .login-form {
   max-width: 640px;
-  margin: auto; }
+  margin: auto;
+  padding: 35px 0; }
 
 header {
   position: absolute;
