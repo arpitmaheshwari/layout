@@ -1,0 +1,13 @@
+.dropdown-bordered{
+		// @include ptc-button-bordered;
+	width: 100%;
+	border: 2px solid white;
+	margin: 10px auto;
+	padding: 10px 10px 10px 23%;
+	color: white;
+	background: transparent;
+
+	option{
+		color: $black;
+	}
+}
