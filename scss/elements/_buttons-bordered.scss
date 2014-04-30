@@ -1,8 +1,8 @@
 .button-bordered-transparent{
 	@include ptc-button-bordered;
 }
-.button-bordered-pink{
-	@include ptc-button-bordered($pink);
+.button-bordered-red{
+	@include ptc-button-bordered($red);
 }
 .button-bordered-green{
 	@include ptc-button-bordered($light-green);

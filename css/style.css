@@ -380,7 +380,8 @@ body {
 
 main {
   padding-top: 45px;
-  height: 100%; }
+  height: 100%;
+  background: #00857d; }
 
 .button-bordered-transparent {
   -webkit-appearance: none;
@@ -395,7 +396,7 @@ main {
   color: white;
   background: transparent; }
 
-.button-bordered-pink {
+.button-bordered-red {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -406,7 +407,7 @@ main {
   margin: 10px auto;
   padding: 10px;
   color: white;
-  background: #e94f57; }
+  background: #bc204b; }
 
 .button-bordered-green {
   -webkit-appearance: none;
@@ -465,7 +466,7 @@ main {
     color: #111111; }
 
 .login-form {
-  max-width: 450px;
+  max-width: 640px;
   margin: auto;
   padding: 35px 0; }
 
