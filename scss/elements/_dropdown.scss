@@ -1,6 +1,6 @@
 // To be refactored as a  mixin
 .dropdown-bordered{
-	@include ptc-button-bordered($width: 33% , $padding: 10px 8px 10px 10px ,$minWidth: 130px ); 
+	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$minWidth: 130px ); 
 	color: white;
 
 	option{

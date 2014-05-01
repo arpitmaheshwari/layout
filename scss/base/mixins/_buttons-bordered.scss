@@ -1,5 +1,7 @@
-@mixin ptc-button-bordered($background : transparent, $border-width: 2px, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: 100% , $minWidth: false , $appearence: none){
-	@include appearance($appearence);
+@mixin ptc-set-style($background : transparent, $border-width: 2px, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: 100% , $minWidth: false , $appearence: false){
+	@if $appearence{
+		@include appearance($appearence);
+	}
 	border: $border-width solid $border-color;
 	margin: $margin;
 	padding: $padding;

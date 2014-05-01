@@ -480,14 +480,9 @@ main {
   padding: 7px; }
 
 .dropdown-bordered {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
   border: 2px solid white;
   margin: 10px auto;
-  padding: 10px 8px 10px 10px;
+  padding: 9px 8px 9px 10px;
   color: white;
   background: transparent;
   width: 33%;

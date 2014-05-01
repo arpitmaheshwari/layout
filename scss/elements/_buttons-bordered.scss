@@ -1,12 +1,12 @@
 .button-bordered{
-	@include ptc-button-bordered;
+	@include ptc-set-style($appearence: none);
 }
 .button-bordered-s{
-	@include ptc-button-bordered( $width:30% , $minWidth: 128px);	
+	@include ptc-set-style( $width:30% , $minWidth: 128px , $appearence: none);	
 }
 .button-bordered-red{
-	@include ptc-button-bordered($background : $red);
+	@include ptc-set-style($background : $red , $appearence: none);
 }
 .button-bordered-green{
-	@include ptc-button-bordered($background : $orange);
+	@include ptc-set-style($background : $orange , $appearence: none);
 }
