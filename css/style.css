@@ -496,19 +496,22 @@ main {
   margin: auto;
   padding: 35px 0;
   text-align: center; }
-  @media (max-width: 640px) {
+  @media (max-width: 639px) {
     .login-form {
-      padding: 35px 0 70px; } }
+      padding-bottom: 70px; } }
+  @media (min-width: 800px) {
+    .login-form {
+      padding-top: 150px; } }
 
 #ilt-name-fields {
   opacity: 0;
-  margin: 8px auto 0px;
+  margin: 8px auto 0px; }
+
+#ILT-user-checkbox:checked ~ #ilt-name-fields {
+  opacity: 1;
   -webkit-transition: opacity, 0.3s ease-in;
   -moz-transition: opacity, 0.3s ease-in;
   transition: opacity, 0.3s ease-in; }
-
-#ILT-user-checkbox:checked ~ #ilt-name-fields {
-  opacity: 1; }
 
 .info-bar {
   background: #005e5d;

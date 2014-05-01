@@ -3,15 +3,19 @@
 	margin: auto;
 	padding: 35px 0;
 	text-align: center;
-	@media (max-width: 640px)  { 
-		padding: 35px 0 70px;
+	@media (max-width: 639px)  { 
+		padding-bottom: 70px;
 	}
+	@media (min-width: 800px)  { 
+		padding-top: 150px;
+	}	
 }
 #ilt-name-fields{
 	opacity: 0;
 	margin: 8px auto 0px;
-	@include transition(opacity , 0.3s ease-in)
+	
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{
 	opacity: 1;
+	@include transition(opacity , 0.3s ease-in)
 }
