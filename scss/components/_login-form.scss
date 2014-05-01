@@ -2,4 +2,13 @@
 	max-width: 640px;
 	margin: auto;
 	padding: 35px 0;
+	text-align: center;
+}
+#ilt-name-fields{
+	opacity: 0;
+	margin: 8px auto 0px;
+	@include transition(opacity , 0.3s ease-in)
+}
+#ILT-user-checkbox:checked ~ #ilt-name-fields{
+	opacity: 1;
 }

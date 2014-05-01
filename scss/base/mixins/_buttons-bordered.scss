@@ -1,9 +1,12 @@
-@mixin ptc-button-bordered($background : transparent, $border-width: 2px, $border-color: $white , $color: $white , $margin: 10px , $padding: 10px , $appearence: none){
+@mixin ptc-button-bordered($background : transparent, $border-width: 2px, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: 100% , $minWidth: false , $appearence: none){
 	@include appearance($appearence);
-	width: 100%;
 	border: $border-width solid $border-color;
-	margin: $margin auto;
+	margin: $margin;
 	padding: $padding;
 	color: $color;
 	background: $background;
+	width: $width;
+	@if $minWidth{
+		min-width: $minWidth;
+	}
 }

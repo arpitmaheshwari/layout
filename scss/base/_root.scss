@@ -6,9 +6,8 @@ html{
 	height: 100%;
 }
 body{
-	width: 100%;
 	height: 100%;
-	text-align: center;
+	background: $teal;
 	text-rendering: optimizeLegibility;
 	font-family: 'Open Sans', 'sans-serif';
 	// font-family: 'Droid Sans', 'sans-serif';
@@ -17,10 +16,5 @@ body{
 	// font-family: 'EB Garamond', 'serif';	
 }
 main{
-	padding-top: $header-height;
 	height: 100%;
-	background: $teal;
 }
-// input[type="button"],input[type="submit"],input[type="reset"]{
-// 	font-family: 'Droid Sans', 'sans-serif';
-// }
