@@ -446,7 +446,8 @@ main {
   padding: 10px;
   color: white;
   background: transparent;
-  width: 100%; }
+  width: 30%;
+  min-width: 128px; }
 
 .hidden-label {
   visibility: none;

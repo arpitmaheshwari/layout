@@ -1,5 +1,5 @@
 .link-bordered-transparent{
 	display: inline-block;
 	text-decoration: none;
-	@include ptc-set-style($appearence: none);
+	@include ptc-set-style($width:30% , $minWidth: 128px , $appearence: none);
 }
