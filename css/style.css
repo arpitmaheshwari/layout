@@ -496,6 +496,9 @@ main {
   margin: auto;
   padding: 35px 0;
   text-align: center; }
+  @media (max-width: 640px) {
+    .login-form {
+      padding: 35px 0 70px; } }
 
 #ilt-name-fields {
   opacity: 0;
