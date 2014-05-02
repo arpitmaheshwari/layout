@@ -368,7 +368,7 @@ th {
   box-sizing: border-box; }
 
 html {
-  font-size: 1rem;
+  font-size: 14px;
   height: 100%; }
 
 body {
@@ -524,9 +524,6 @@ main {
   max-width: 480px;
   margin: auto;
   padding: 35px 20px; }
-  @media (max-width: 639px) {
-    .login-form {
-      padding-bottom: 70px; } }
   @media (min-width: 800px) {
     .login-form {
       padding-top: 150px; } }
@@ -534,9 +531,6 @@ main {
 .login-button-set {
   padding-top: 100px;
   text-align: center; }
-
-.login-input-set {
-  margin: auto; }
 
 #ilt-name-fields {
   opacity: 0;
@@ -558,7 +552,8 @@ main {
   top: auto;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  font-size: 0.78571rem; }
 
 .banner-image {
   width: 100%;

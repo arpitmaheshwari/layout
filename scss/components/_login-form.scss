@@ -2,9 +2,6 @@
 	max-width: 480px;
 	margin: auto;
 	padding: 35px 20px;
-	@media (max-width: 639px)  { 
-		padding-bottom: 70px;
-	}
 	@media (min-width: 800px)  { 
 		padding-top: 150px;
 	}	
@@ -12,9 +9,6 @@
 .login-button-set{
 	padding-top: 100px;
 	text-align: center;
-}
-.login-input-set{
-	margin: auto;
 }
 #ilt-name-fields{
 	opacity: 0;

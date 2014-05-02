@@ -1,4 +1,4 @@
-@mixin ptc-size($property, $size, $base: $em-base) {
+@mixin ptc-size($size: $em-base, $property: font-size , $base: $_base-size) {
 	// Calling the rem mixin
 	@include rem($property, $size, $base);
 }

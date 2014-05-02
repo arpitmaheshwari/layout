@@ -2,7 +2,7 @@
 	box-sizing: border-box;	
 }
 html{
-	@include ptc-size(font-size,14px,$_base-size);
+	font-size: 14px;
 	height: 100%;
 }
 body{
