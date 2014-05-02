@@ -433,6 +433,38 @@ main {
   background: #e57200;
   width: 100%; }
 
+.ios-toggle-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 22px;
+  background: silver;
+  border-radius: 10px;
+  position: relative;
+  top: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background .2s .1s; }
+  .ios-toggle-button:after {
+    content: '';
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: left .2s; }
+  .ios-toggle-button:checked {
+    background: #f1b434; }
+    .ios-toggle-button:checked:after {
+      left: 20px; }
+
 .link-bordered-transparent {
   display: inline-block;
   text-decoration: none;
