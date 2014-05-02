@@ -525,7 +525,7 @@ main {
     color: #111111; }
 
 .login-form {
-  max-width: 640px;
+  width: 440px;
   margin: auto;
   padding: 35px 0;
   text-align: center; }
@@ -535,6 +535,13 @@ main {
   @media (min-width: 800px) {
     .login-form {
       padding-top: 150px; } }
+
+.login-button-set {
+  padding-top: 100px; }
+
+.login-input-set {
+  width: 90%;
+  margin: auto; }
 
 #ilt-name-fields {
   opacity: 0;
@@ -562,51 +569,3 @@ main {
   width: 100%;
   padding: 10px 5px 0;
   max-width: 500px; }
-
-.login-module {
-  position: relative;
-  background: #e94f57;
-  width: 100%;
-  height: 100%; }
-
-.login-button-set {
-  width: 62%;
-  margin: auto;
-  padding-top: 100px; }
-
-.login-input-set {
-  width: 68.75%;
-  margin: auto; }
-
-.login-container {
-  background: #4fe9e1;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-  /* reset transforms (Chrome bug) */
-  -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
-  -moz-transform: translateZ(0) translateX(0) rotateY(0deg);
-  -ms-transform: translateZ(0) translateX(0) rotateY(0deg);
-  -o-transform: translateZ(0) translateX(0) rotateY(0deg);
-  transform: translateZ(0) translateX(0) rotateY(0deg); }
-
-.login-wrapper {
-  position: relative; }
-
-.login-module.modalview {
-  position: fixed;
-  -webkit-perspective: 1500px;
-  -moz-perspective: 1500px;
-  perspective: 1500px; }
-
-.modalview .login-container {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-.modalview .login-wrapper {
-  -webkit-transform: translateZ(-1px);
-  /* solves a rendering bug in Chrome on Windows */ }
