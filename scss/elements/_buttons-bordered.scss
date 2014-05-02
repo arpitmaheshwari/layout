@@ -4,6 +4,6 @@
 .button-bordered-s{
 	@include ptc-set-style( $width:30% , $minWidth: 128px , $appearence: none);
 }
-.button-bordered-green{
+.button-bordered-orange{
 	@include ptc-set-style($background : $orange , $appearence: none);
 }
