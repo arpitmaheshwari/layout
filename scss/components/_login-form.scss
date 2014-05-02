@@ -7,14 +7,13 @@
 	}	
 }
 .login-button-set{
-	padding-top: 100px;
 	text-align: center;
 }
 #ilt-name-fields{
 	opacity: 0;
 	margin: 8px auto 0px;	
 }
-#ILT-user-checkbox:checked ~ #ilt-name-fields{
+#ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
 	opacity: 1;
 	@include transition(opacity , 0.3s ease-in)
 }

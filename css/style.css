@@ -355,10 +355,10 @@ td,
 th {
   padding: 0; }
 
-.no-display {
+.not-displayed {
   display: none; }
 
-.no-visibility {
+.not-visible {
   visibility: hidden; }
 
 .white-color {
@@ -529,14 +529,13 @@ main {
       padding-top: 150px; } }
 
 .login-button-set {
-  padding-top: 100px;
   text-align: center; }
 
 #ilt-name-fields {
   opacity: 0;
   margin: 8px auto 0px; }
 
-#ILT-user-checkbox:checked ~ #ilt-name-fields {
+#ILT-user-checkbox:checked ~ #ilt-name-fields, #ILT-user-checkbox:checked ~ .warning-msg {
   opacity: 1;
   -webkit-transition: opacity, 0.3s ease-in;
   -moz-transition: opacity, 0.3s ease-in;
@@ -554,6 +553,12 @@ main {
   bottom: 0;
   left: 0;
   font-size: 0.78571rem; }
+
+.warning-msg {
+  opacity: 0;
+  color: white;
+  font-size: 0.92857rem;
+  padding-bottom: 80px; }
 
 .banner-image {
   width: 100%;
