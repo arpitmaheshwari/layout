@@ -3,4 +3,7 @@
 }
 .input-half-width{
 	@include ptc-text-input($width: 49.5%);
+	@media (max-width: 439px)	{
+		min-width: 100%;
+	}	
 }

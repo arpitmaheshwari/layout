@@ -2,7 +2,7 @@
 	@include ptc-set-style($appearence: none);
 }
 .button-bordered-s{
-	@include ptc-set-style( $width:30% , $minWidth: 128px , $appearence: none);	
+	@include ptc-set-style( $width:30% , $minWidth: 128px , $appearence: none);
 }
 .button-bordered-green{
 	@include ptc-set-style($background : $orange , $appearence: none);

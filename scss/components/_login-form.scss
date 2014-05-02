@@ -1,7 +1,7 @@
 .login-form{
-	width: 440px;
+	max-width: 480px;
 	margin: auto;
-	padding: 35px 0;
+	padding: 35px 20px;
 	@media (max-width: 639px)  { 
 		padding-bottom: 70px;
 	}
@@ -10,17 +10,15 @@
 	}	
 }
 .login-button-set{
-	width: 90%;
-	margin: auto;
 	padding-top: 100px;
+	text-align: center;
 }
 .login-input-set{
 	margin: auto;
 }
 #ilt-name-fields{
 	opacity: 0;
-	margin: 8px auto 0px;
-	
+	margin: 8px auto 0px;	
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{
 	opacity: 1;
