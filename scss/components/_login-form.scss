@@ -7,6 +7,7 @@
 	}	
 }
 .login-button-set{
+	padding-top: 77px;
 	text-align: center;
 }
 #ilt-name-fields{
@@ -15,5 +16,5 @@
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
 	opacity: 1;
-	@include transition(opacity , 0.3s ease-in)
+	@include transition(opacity , 0.45s ease-in)
 }
