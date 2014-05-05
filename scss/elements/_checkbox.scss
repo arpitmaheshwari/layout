@@ -19,7 +19,7 @@
     background: $white;
     position: absolute;
     top: 2px;
-    left: 2px;
+    left: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: left .2s;
@@ -29,7 +29,7 @@
     background: $orange;
     
     &:after{
-      left: 20px;
+      left: 18px;
     }
   }
 }

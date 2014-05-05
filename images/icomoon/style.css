@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?wsddrg');
+	src:url('fonts/icomoon.eot?#iefixwsddrg') format('embedded-opentype'),
+		url('fonts/icomoon.woff?wsddrg') format('woff'),
+		url('fonts/icomoon.ttf?wsddrg') format('truetype'),
+		url('fonts/icomoon.svg?wsddrg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-forward:before {
+	content: "\e601";
+}
+.icon-export:before {
+	content: "\e602";
+}
+.icon-arrow-down:before {
+	content: "\e603";
+}
+.icon-arrow-down2:before {
+	content: "\e604";
+}
+.icon-share:before {
+	content: "\e605";
+}
+.icon-redo:before {
+	content: "\e606";
+}
+.icon-expand:before {
+	content: "\e01a";
+}
+.icon-share-square-o:before {
+	content: "\f045";
+}
+.icon-chevron-circle-down:before {
+	content: "\f13a";
+}
+.icon-export-outline:before {
+	content: "\e600";
+}

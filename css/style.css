@@ -355,6 +355,94 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../images/icomoon/fonts/icomoon.eot?wsddrg");
+  src: url("../images/icomoon/fonts/icomoon.eot?#iefixwsddrg") format("embedded-opentype"), url("../images/icomoon/fonts/icomoon.woff?wsddrg") format("woff"), url("../images/icomoon/fonts/icomoon.ttf?wsddrg") format("truetype"), url("../images/icomoon/fonts/icomoon.svg?wsddrg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-forward:before {
+  content: "\e601"; }
+
+.icon-export:before {
+  content: "\e602"; }
+
+.icon-arrow-down:before {
+  content: "\e603"; }
+
+.icon-arrow-down2:before {
+  content: "\e604"; }
+
+.icon-share:before {
+  content: "\e605"; }
+
+.icon-redo:before {
+  content: "\e606"; }
+
+.icon-expand:before {
+  content: "\e01a"; }
+
+.icon-share-square-o:before {
+  content: "\f045"; }
+
+.icon-chevron-circle-down:before {
+  content: "\f13a"; }
+
+.icon-export-outline:before {
+  content: "\e600"; }
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  fill: #000000; }
+
+.icon-sitemap {
+  fill: #000000; }
+
+.icon-forward {
+  fill: #000000; }
+
+.icon-export {
+  fill: #000000; }
+
+.icon-arrow-down {
+  fill: #000000; }
+
+.icon-arrow-down2 {
+  fill: #000000; }
+
+.icon-share {
+  fill: #000000; }
+
+.icon-expand {
+  fill: #000000; }
+
+.icon-redo {
+  fill: #000000; }
+
+.icon-share-square-o {
+  fill: #000000;
+  width: 30px; }
+
+.icon-chevron-circle-down {
+  fill: #000000; }
+
+.icon-export-outline {
+  fill: #000000; }
+
 .not-displayed {
   display: none; }
 
@@ -444,14 +532,14 @@ main {
     background: white;
     position: absolute;
     top: 2px;
-    left: 2px;
+    left: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: left .2s; }
   .ios-toggle-button:checked {
     background: #e57200; }
     .ios-toggle-button:checked:after {
-      left: 20px; }
+      left: 18px; }
 
 .link-bordered-transparent {
   display: inline-block;
@@ -508,6 +596,11 @@ main {
       min-width: 100%; } }
 
 .dropdown-bordered {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   border: 2px solid white;
   margin: 10px auto;
   padding: 9px 8px 9px 10px;
@@ -518,6 +611,9 @@ main {
   color: white; }
   .dropdown-bordered option {
     color: #111111; }
+
+.dropdown-first-value {
+  background-image: url("../images/sprites.svg"); }
 
 .login-form {
   max-width: 480px;

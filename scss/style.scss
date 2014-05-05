@@ -6,7 +6,6 @@
 @import "libs/bourbon/_bourbon";
 
 // Loading base/generic classes
-@import "base/_web-fonts";
 @import "base/_palette";
 @import "base/_variables";
 
@@ -18,6 +17,8 @@
 @import "base/mixins/_vertical-nav";
 @import "base/mixins/_link-color";
 
+@import "base/_web-fonts";
+@import "base/_icomoon";
 @import "base/_images";
 @import "base/_reuse";
 @import "base/_root";
