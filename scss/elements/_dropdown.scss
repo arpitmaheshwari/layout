@@ -1,13 +1,13 @@
 // To be refactored as a  mixin
 .dropdown-bordered{
-	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$minWidth: 130px ,$appearence:none); 
+	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$appearence:none); 
 	color: white;
+	background: {
+			image: url($base-image-path + 'arrow-down.svg') ;
+			repeat: no-repeat;
+			position: 90% center;
+	}
 	option{
 		color: $black;
 	}
 }
-
-.dropdown-first-value{
-		background-image: url($base-image-path + 'sprites.svg') ;
-}
-

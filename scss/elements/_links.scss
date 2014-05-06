@@ -1,7 +1,7 @@
 .link-bordered-transparent{
 	display: inline-block;
 	text-decoration: none;
-	@include ptc-set-style($width:32.5% , $minWidth: 130px , $appearence: none  );
+	@include ptc-set-style( $minWidth: 130px , $appearence: none  );
 
 	img{
 		width: 18px;

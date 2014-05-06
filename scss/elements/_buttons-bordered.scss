@@ -1,9 +1,0 @@
-.button-bordered{
-	@include ptc-set-style($appearence: none);
-}
-.button-bordered-s{
-	@include ptc-set-style( $width:30% , $minWidth: 128px , $appearence: none);
-}
-.button-bordered-orange{
-	@include ptc-set-style($background : $orange , $appearence: none);
-}
