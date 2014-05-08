@@ -1,6 +1,15 @@
 .link-bordered-transparent{
-	display: inline-block;
+	display: block;
+	color: $white;
+	padding: 10px 0;
 	text-decoration: none;
-	@include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-color:$blue , $border-active:$blue );
+	// @include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-color:$blue , $border-active:$blue );
 
+	&:hover{
+		text-decoration: underline;
+	}
+
+	&:active{
+		color: $silver;
+	}
 }

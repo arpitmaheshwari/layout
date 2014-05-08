@@ -523,23 +523,14 @@ body {
       left: 18px; }
 
 .link-bordered-transparent {
-  display: inline-block;
-  text-decoration: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: 2px solid #009cde;
-  margin: 10px auto;
-  padding: 10px;
+  display: block;
   color: white;
-  background: #236192;
-  min-width: 130px; }
+  padding: 10px 0;
+  text-decoration: none; }
   .link-bordered-transparent:hover {
-    border: 2px solid #236192; }
+    text-decoration: underline; }
   .link-bordered-transparent:active {
-    border: 2px outset #009cde; }
+    color: silver; }
 
 .hidden-label {
   visibility: none;
@@ -616,6 +607,7 @@ body {
   transition: opacity, 0.45s ease-in; }
 
 .warning-msg {
+  font-size: 0.92857rem;
   opacity: 0;
   color: white; }
 
