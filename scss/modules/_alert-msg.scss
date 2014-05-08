@@ -1,4 +1,5 @@
 .warning-msg{
 	opacity: 0;
 	color: $white;
+	@include ptc-size(13px);
 }
