@@ -1,9 +1,4 @@
 .login-button{
-	@include ptc-set-style($background : $blueDark , $width: 100% , $appearence: none);
+	@include ptc-set-style($background : $blueDark , $width: 100% , $appearence: none , $border-color:$blue , $border-active:$blue );
 	font-weight: bold;
-	&:hover,	&:active {
-		color: $blueDark;
-		background: $white;
-	}
-
 }

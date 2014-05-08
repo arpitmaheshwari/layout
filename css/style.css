@@ -471,16 +471,17 @@ body {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  border: 0 solid white;
+  border: 2px solid #009cde;
   margin: 10px auto;
   padding: 10px;
   color: white;
   background: #236192;
   width: 100%;
   font-weight: bold; }
-  .login-button:hover, .login-button:active {
-    color: #236192;
-    background: white; }
+  .login-button:hover {
+    border: 2px solid #236192; }
+  .login-button:active {
+    border: 2px outset #009cde; }
 
 .ios-toggle-button {
   -webkit-appearance: none;
@@ -523,40 +524,16 @@ body {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  border: 0 solid white;
+  border: 2px solid #009cde;
   margin: 10px auto;
   padding: 10px;
   color: white;
   background: #236192;
-  min-width: 130px;
-  overflow: hidden;
-  position: relative;
-  z-index: 0; }
-  .link-bordered-transparent:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    width: 100%;
-    height: 0;
-    top: 50%;
-    left: 50%;
-    background: #fff;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform: translateX(-50%) translateY(-50%) rotate(45deg); }
-  .link-bordered-transparent:hover, .link-bordered-transparent:active {
-    color: #236192; }
-  .link-bordered-transparent:hover:after {
-    height: 260%;
-    opacity: 1; }
-  .link-bordered-transparent:active:after {
-    height: 400%;
-    opacity: 1; }
+  min-width: 130px; }
+  .link-bordered-transparent:hover {
+    border: 2px solid #236192; }
+  .link-bordered-transparent:active {
+    border: 2px outset #009cde; }
 
 .hidden-label {
   visibility: none;
@@ -598,18 +575,20 @@ body {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  border: 0 solid white;
+  border: 2px solid #009cde;
   margin: 10px auto;
   padding: 9px 8px 9px 10px;
   color: white;
   background: #236192;
   width: 33%;
   color: white;
-  position: relative;
-  top: -24px;
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: 90% center; }
+  .dropdown-bordered:hover {
+    border: 2px solid #236192; }
+  .dropdown-bordered:active {
+    border: 2px outset #009cde; }
   .dropdown-bordered option {
     color: white; }
 

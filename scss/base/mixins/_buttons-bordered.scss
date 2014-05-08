@@ -1,8 +1,19 @@
-@mixin ptc-set-style($background : transparent, $border-width: 0, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: false , $minWidth: false , $appearence: false){
+@mixin ptc-set-style($background : $transparent, 
+						$border-width: 2px, 
+						$border-style:solid , 
+						$border-color: $background , 
+						$color: $white , 
+						$margin: 10px auto, 
+						$padding: 10px , 
+						$width: false , 
+						$minWidth: false , 
+						$appearence: false ,
+						$border-active: $background
+						){
 	@if $appearence{
 		@include appearance($appearence);
 	}
-	border: $border-width solid $border-color;
+	border: $border-width $border-style $border-color;
 	margin: $margin;
 	padding: $padding;
 	color: $color;
@@ -12,5 +23,15 @@
 	}
 	@if $minWidth{
 		min-width: $minWidth;
+	}
+
+
+
+	&:hover{
+		border: 2px solid $background;
+	}
+
+	&:active{
+		border: 2px outset $border-active;
 	}
 }

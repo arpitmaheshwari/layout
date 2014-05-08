@@ -1,9 +1,7 @@
 // To be refactored as a  mixin
 .dropdown-bordered{
-	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$appearence:none , $background: $blueDark); 
+	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$appearence:none , $background: $blueDark , $border-color:$blue , $border-active:$blue ); 
 	color: white;
-	position: relative;
-	top: -24px;
 	background: {
 			image: url($base-image-path + 'arrow-down.svg') ;
 			repeat: no-repeat;
@@ -12,8 +10,4 @@
 	option{
 		color: $white;
 	}
-
-	// &:after {
-	// 	content: '';
-	// }
 }

@@ -1,60 +1,6 @@
 .link-bordered-transparent{
 	display: inline-block;
 	text-decoration: none;
-	@include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-width:0);
-	overflow: hidden;
-	position: relative;
-	z-index: 0;
+	@include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-color:$blue , $border-active:$blue );
 
-
-	// [class^="icon-"], [class*=" icon-"] {
-	// 	visibility: hidden;
-	// }
-
-	// &:hover{
-	// 	[class^="icon-"], [class*=" icon-"] {
-	// 		visibility: visible;
-	// 	}
-	// }
-	// &:active{
-	// 	border-colour:$silver transparent;
-	// 	[class^="icon-"]:before, [class*=" icon-"]:before {
-	// 		color: $silver;
-	// 	}
-	// }
-
-	&:after {
-
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-
-	width: 100%;
-	height: 0;
-	top: 50%;
-	left: 50%;
-	background: #fff;
-	opacity: 0;
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	}
-
-	&:hover,	&:active {
-		color: $blueDark;
-	}
-
-	&:hover:after {
-		height: 260%;
-		opacity: 1;
-	}
-
-	&:active:after {
-		height: 400%;
-		opacity: 1;
-	}
 }
