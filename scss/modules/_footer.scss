@@ -1,0 +1,9 @@
+.info-bar{
+	// background: $blueDark;
+	text-align: center;
+	border-top: 1px solid $silver;
+	padding: 10px 0;
+	margin: 0;
+	@include position(absolute , auto -42px 0);
+	@include ptc-size(11px);
+}

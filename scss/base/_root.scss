@@ -7,7 +7,16 @@ html{
 }
 body{
 	height: 100%;
-	background: $blue;
+	max-width: 1160px;
+	margin: 0 auto;
+	position: relative;
+	background: {
+		// color: $blueDark;
+		image: url($base-image-path + $bodyBg);
+		size: auto 100%;
+		position: center;
+		repeat: no-repeat;
+	}
 	text-rendering: optimizeLegibility;
 	font-family: 'Open Sans', sans-serif;	
 }

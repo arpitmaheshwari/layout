@@ -461,7 +461,13 @@ html {
 
 body {
   height: 100%;
-  background: #009cde;
+  max-width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../images/ptc-hexagon.png");
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans', sans-serif; }
 
@@ -593,13 +599,11 @@ body {
     color: white; }
 
 .login-form {
-  max-width: 480px;
-  margin: auto;
-  padding: 35px 20px; }
+  max-width: 520px;
+  padding: 120px 40px; }
 
 .login-button-set {
-  padding-top: 95px;
-  text-align: center; }
+  padding-top: 95px; }
 
 #ilt-name-fields {
   opacity: 0;
@@ -610,19 +614,6 @@ body {
   -webkit-transition: opacity, 0.45s ease-in;
   -moz-transition: opacity, 0.45s ease-in;
   transition: opacity, 0.45s ease-in; }
-
-.info-bar {
-  background: #236192;
-  text-align: center;
-  border-top: 1px solid silver;
-  padding: 10px 0;
-  margin: 0;
-  position: fixed;
-  top: auto;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  font-size: 0.78571rem; }
 
 .warning-msg {
   opacity: 0;
@@ -639,3 +630,15 @@ header {
   width: 100%;
   padding: 10px 5px 0;
   max-width: 500px; }
+
+.info-bar {
+  text-align: center;
+  border-top: 1px solid silver;
+  padding: 10px 0;
+  margin: 0;
+  position: absolute;
+  top: auto;
+  right: -42px;
+  bottom: 0;
+  left: -42px;
+  font-size: 0.78571rem; }
