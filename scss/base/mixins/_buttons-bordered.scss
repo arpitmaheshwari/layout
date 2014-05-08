@@ -1,4 +1,4 @@
-@mixin ptc-set-style($background : transparent, $border-width: 2px, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: false , $minWidth: false , $appearence: false){
+@mixin ptc-set-style($background : transparent, $border-width: 0, $border-color: $white , $color: $white , $margin: 10px auto, $padding: 10px , $width: false , $minWidth: false , $appearence: false){
 	@if $appearence{
 		@include appearance($appearence);
 	}
