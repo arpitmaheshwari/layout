@@ -523,7 +523,6 @@ body {
       left: 15px; }
 
 .link-bordered-transparent {
-  display: block;
   color: white;
   padding: 10px 0;
   text-decoration: none; }
@@ -562,27 +561,7 @@ body {
       min-width: 100%; } }
 
 .dropdown-bordered {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: 2px solid #009cde;
-  margin: 4px 0;
-  padding: 9px 8px 9px 10px;
-  color: white;
-  background: #236192;
-  width: 33%;
-  color: white;
-  background-image: url("../images/arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position: 90% center; }
-  .dropdown-bordered:hover {
-    border: 2px solid #236192; }
-  .dropdown-bordered:active {
-    border: 2px outset #009cde; }
-  .dropdown-bordered option {
-    color: white; }
+  float: right; }
 
 .login-form {
   max-width: 570px;
