@@ -1,15 +1,22 @@
 .login-form{
-	max-width: 520px;
-	padding: 150px 40px;
+	max-width: 570px;
+	padding: 150px 65px;
+}
+.login-input-set{
+	margin-top: 16px;
 }
 .login-button-set{
-	padding-top: 95px;
+	padding-top: 40px;
 }
-#ilt-name-fields{
-	opacity: 0;
-	margin: 8px auto 0px;	
+#wbt-input-fields{
+	height: 176px;
 }
-#ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
-	opacity: 1;
-	@include transition(opacity , 0.45s ease-in)
+#ilt-input-fields{
+	display: none;
+}
+#ILT-user-checkbox:checked ~ #wbt-input-fields{
+	display: none;
+}
+#ILT-user-checkbox:checked ~ #ilt-input-fields{
+	display: block;
 }

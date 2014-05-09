@@ -11,29 +11,45 @@
 		</header> -->
 		<main>
 		<!-- Login form -->
+<!-- 			<p class="language-bar">
+				<a href="" class="link-bordered-transparent" title="English" value="0">English</a>
+				<a href="" class="link-bordered-transparent" title="French" value="1">French</a>
+				<a href="" class="link-bordered-transparent" title="German" value="2">German</a>
+				<a href="" class="link-bordered-transparent" title="Japanese" value="3">Japanese</a>
+				<a href="" class="link-bordered-transparent" title="Italian" value="6">Italian</a>
+				<a href="" class="link-bordered-transparent" title="Korean" value="7">Korean</a>
+				<a href="" class="link-bordered-transparent" title="Simplified Chinese" value="4">Simplified Chinese</a>
+				<a href="" class="link-bordered-transparent" title="Traditional Chinese" value="5">Traditional Chinese</a>
+			</p> -->
+
 			<form class="login-form">
 				<h4 class="white-color">Login</h4>
-				<div class="login-input-set">		
-					<input type="text" name="login-username" value="" placeholder="Username / Email" class="basic-input-field">
-
-					<input type="password" name="login-password" value="" placeholder="Password" class="basic-input-field">			
-				</div>
 
 				<input type="checkbox" name="is-ILT-user" value="" id="ILT-user-checkbox" class="ios-toggle-button">
 				<label for="ILT-user-checkbox" class="white-color">I am attending a PTC University class</label>
 
-				<p class="warning-msg">Thank you for joining us!  Please enter your first and last name before logging in.</p>
+				<div id="wbt-input-fields"  class="login-input-set">		
+					<input type="text" name="login-username" value="" placeholder="Username" class="basic-input-field">
 
-				<div id="ilt-name-fields"  class="login-input-set">
-					<input type="text" name="login-username" value="" placeholder="First Name" class="input-half-width">
-					<input type="text" name="login-username" value="" placeholder="Last Name" class="input-half-width">
+					<input type="password" name="login-password" value="" placeholder="Password" class="basic-input-field">			
+				</div>
+
+				<div id="ilt-input-fields" class="login-input-set">
+					<input type="text" name="login-firstname" value="" placeholder="First Name" class="basic-input-field">
+					<input type="text" name="login-lastname" value="" placeholder="Last Name" class="basic-input-field">
+					<input type="text" name="login-email" value="" placeholder="Email" class="basic-input-field">
+					<input type="text" name="login-class" value="" placeholder="Class Code" class="basic-input-field">
 				</div>
 				<div class="login-button-set">
 	<!-- 				<a href="#" class="link-bordered-transparent">
 						Log In
 					</a> -->
 					<input type="submit" name="" value="Log In" class="login-button" />
-					<select name="" class="dropdown-bordered">
+					<a href="http://www.ptc.com/common/account/index.htm" class="link-bordered-transparent">
+						Forgot password
+						<span class="icon-redo"></span>
+					</a>
+<!-- 					<select name="" class="dropdown-bordered">
 						<option selected="selected">Language
 							<span class="icon-arrow-down"></span>
 						</option>
@@ -45,15 +61,11 @@
 						<option title="Traditional Chinese" value="5">Traditional Chinese</option>
 						<option title="Italian" value="6">Italian</option>
 						<option title="Korean" value="7">Korean</option>
-					</select>
-					<a href="http://www.ptc.com/common/account/index.htm" class="link-bordered-transparent">
-						Forgot password
-						<span class="icon-redo"></span>
-					</a>
-					<a href="http://www.ptc.com/common/account/index.htm" class="link-bordered-transparent">
+					</select> -->
+<!-- 					<a href="http://www.ptc.com/common/account/index.htm" class="link-bordered-transparent">
 						About
 						<span class="icon-redo"></span>
-					</a>				
+					</a> -->				
 				</div>
 			</form>
 		</main>
@@ -64,7 +76,9 @@
 					<span>2014</span>
 				</a>
 				<a target="_blank" class="white-color" href="https://www.ptc.com" title="PTC.com">PTC Inc.</a> ,
-				All Rights Reserved , <a target="_blank" class="white-color" href="https://www.ptc.com/common/privacy.htm">Privacy Policy</a>
+				All Rights Reserved , <a target="_blank" class="white-color" href="https://www.ptc.com/common/privacy.htm">Privacy Policy.</a>
+				Wanna know more 
+				<a target="_blank" class="white-color" href="" title="PTC.com">about us</a>
 			</p>
 		</footer>
 <!-- 
