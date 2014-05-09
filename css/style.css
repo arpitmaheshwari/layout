@@ -592,24 +592,27 @@ body {
   .dropdown-bordered option {
     color: white; }
 
+h4 {
+  text-align: left; }
+
 .login-form {
-  max-width: 480px;
-  margin: auto;
-  padding: 35px 20px; }
+  max-width: 540px;
+  display: inline-block;
+  padding: 100px 50px;
+  vertical-align: top;
+  margin: auto; }
 
 .login-button-set {
-  padding-top: 95px;
+  text-align: left; }
+
+#wbt-input-fields {
+  height: 176px; }
+
+.column {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
   text-align: center; }
-
-#ilt-name-fields {
-  opacity: 0;
-  margin: 8px auto 0px; }
-
-#ILT-user-checkbox:checked ~ #ilt-name-fields, #ILT-user-checkbox:checked ~ .warning-msg {
-  opacity: 1;
-  -webkit-transition: opacity, 0.45s ease-in;
-  -moz-transition: opacity, 0.45s ease-in;
-  transition: opacity, 0.45s ease-in; }
 
 .info-bar {
   background: #236192;

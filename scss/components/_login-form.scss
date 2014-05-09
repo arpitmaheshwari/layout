@@ -1,17 +1,28 @@
 .login-form{
-	max-width: 480px;
+	max-width: 540px;
+	display: inline-block;
+	padding: 100px 50px;
+	vertical-align: top;
 	margin: auto;
-	padding: 35px 20px;
 }
 .login-button-set{
-	padding-top: 95px;
+	// padding-top: 45px;
+	text-align: left;
+}
+#wbt-input-fields{
+	height: 176px;
+}
+.column{
+	display: inline-block;
+	width: 49%;
+	vertical-align: top;
 	text-align: center;
 }
-#ilt-name-fields{
-	opacity: 0;
-	margin: 8px auto 0px;	
-}
-#ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
-	opacity: 1;
-	@include transition(opacity , 0.45s ease-in)
-}
+// #ilt-name-fields{
+// 	opacity: 0;
+// 	margin: 8px auto 0px;	
+// }
+// #ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
+// 	opacity: 1;
+// 	@include transition(opacity , 0.45s ease-in)
+// }
