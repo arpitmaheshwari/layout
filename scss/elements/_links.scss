@@ -2,5 +2,18 @@
 	display: inline-block;
 	text-decoration: none;
 	@include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-color:$blue , $border-active:$blue );
+}
+.forgot-password{
+	color: $white;
+	text-decoration: none;
+	float: right;
+
+	&:hover{
+		text-decoration: underline;
+	}
+
+	&:active{
+		color: $greyDark;
+	}
 
 }

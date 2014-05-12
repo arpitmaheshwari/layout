@@ -535,6 +535,15 @@ body {
   .link-bordered-transparent:active {
     border: 2px outset #009cde; }
 
+.forgot-password {
+  color: white;
+  text-decoration: none;
+  float: right; }
+  .forgot-password:hover {
+    text-decoration: underline; }
+  .forgot-password:active {
+    color: #53565a; }
+
 .hidden-label {
   visibility: none;
   height: 7px;
@@ -581,10 +590,7 @@ body {
   color: white;
   background: #236192;
   width: 33%;
-  color: white;
-  background-image: url("../images/arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position: 90% center; }
+  color: white; }
   .dropdown-bordered:hover {
     border: 2px solid #236192; }
   .dropdown-bordered:active {
@@ -592,14 +598,29 @@ body {
   .dropdown-bordered option {
     color: white; }
 
+.plain-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("../images/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  border: 0;
+  color: white;
+  padding-right: 30px; }
+  .plain-dropdown option {
+    background: #236192; }
+
 .login-form {
   max-width: 480px;
   margin: auto;
   padding: 35px 20px; }
 
 .login-button-set {
-  padding-top: 95px;
-  text-align: center; }
+  padding-top: 95px; }
 
 #ilt-name-fields {
   opacity: 0;

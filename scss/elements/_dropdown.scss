@@ -2,12 +2,23 @@
 .dropdown-bordered{
 	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$appearence:none , $background: $blueDark , $border-color:$blue , $border-active:$blue ); 
 	color: white;
+	option{
+		color: $white;
+	}
+}
+.plain-dropdown{
+	@include appearance(none);
 	background: {
+			color: transparent;
 			image: url($base-image-path + 'arrow-down.svg') ;
 			repeat: no-repeat;
 			position: 90% center;
 	}
+	border: 0;
+	color: $white;
+	padding-right: 30px;
+
 	option{
-		color: $white;
+		background: $blueDark;
 	}
 }
