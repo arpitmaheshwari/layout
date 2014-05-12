@@ -523,8 +523,9 @@ body {
       left: 15px; }
 
 .link-bordered-transparent {
+  float: right;
   color: white;
-  padding: 10px 0;
+  padding: 3px 0 0;
   text-decoration: none; }
   .link-bordered-transparent:hover {
     text-decoration: underline; }
@@ -559,9 +560,6 @@ body {
   @media (max-width: 439px) {
     .input-half-width {
       min-width: 100%; } }
-
-.dropdown-bordered {
-  float: right; }
 
 .login-form {
   max-width: 570px;
