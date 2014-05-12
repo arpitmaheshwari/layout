@@ -647,7 +647,8 @@ body {
 
 .warning-msg {
   opacity: 0;
-  color: white; }
+  color: white;
+  font-size: 0.92857rem; }
 
 header {
   background: white;
