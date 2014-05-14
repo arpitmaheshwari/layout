@@ -619,12 +619,12 @@ body {
     outline: 0; }
 
 .login-form {
-  max-width: 480px;
+  max-width: 440px;
   margin: auto;
-  padding: 35px 20px; }
+  padding-top: 95px; }
 
 .login-button-set {
-  padding-top: 95px; }
+  padding-top: 35px; }
 
 #ilt-name-fields {
   opacity: 0;
