@@ -12,11 +12,13 @@
 			color: transparent;
 			image: url($base-image-path + 'arrow-down.svg') ;
 			repeat: no-repeat;
-			position: 100% 85%;
+			/*position: 100% 85%;*/
+			position: left center;
 	}
 	border: 0;
 	color: $white;
-	padding-right: 12px;
+	/*padding-right: 12px;*/
+	padding-left: 16px;
 
 	option{
 		background: $blueDark;
