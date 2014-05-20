@@ -1,24 +1,10 @@
-// To be refactored as a  mixin
-.dropdown-bordered{
-	@include ptc-set-style($width: 33% , $padding: 9px 8px 9px 10px ,$appearence:none , $background: $blueDark , $border-color:$blue , $border-active:$blue ); 
-	color: white;
-	option{
-		color: $white;
-	}
-}
 .plain-dropdown{
 	@include appearance(none);
 	background: {
 			color: transparent;
-			image: url($base-image-path + 'arrow-down.svg') ;
-			repeat: no-repeat;
-			/*position: 100% 85%;*/
-			position: left center;
 	}
 	border: 0;
 	color: $white;
-	/*padding-right: 12px;*/
-	padding-left: 16px;
 
 	option{
 		background: $blueDark;

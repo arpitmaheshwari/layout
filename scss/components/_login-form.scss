@@ -4,11 +4,17 @@
 	padding-top: 95px;
 }
 .login-button-set{
-	padding-top: 35px;
+	/*padding-top: 35px;*/
+	ul,li{
+		display: inline;
+	}
 }
 #ilt-name-fields{
 	opacity: 0;
-	margin: 8px auto 0px;	
+	/*margin: 8px auto 0px;	*/
+	ul,li{
+		display: inline;
+	}
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
 	opacity: 1;
