@@ -1,7 +1,15 @@
-.link-bordered-transparent{
-	display: inline-block;
+.plain-links{
+	display: inline;
 	text-decoration: none;
-	@include ptc-set-style( $minWidth: 130px , $appearence: none , $background: $blueDark , $border-color:$blue , $border-active:$blue );
+	color: $white;
+
+	&:hover{
+		text-decoration: underline;
+	}
+
+	&:active{
+		color: $greyDark;
+	}
 }
 .forgot-password{
 	color: $white;
@@ -15,5 +23,4 @@
 	&:active{
 		color: $greyDark;
 	}
-
 }

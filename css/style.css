@@ -458,24 +458,14 @@ body {
     .ios-toggle-button:checked:after {
       left: 18px; }
 
-.link-bordered-transparent {
-  display: inline-block;
+.plain-links {
+  display: inline;
   text-decoration: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border: 2px solid #009cde;
-  margin: 10px auto;
-  padding: 10px;
-  color: white;
-  background: #236192;
-  min-width: 130px; }
-  .link-bordered-transparent:hover {
-    border: 2px solid #236192; }
-  .link-bordered-transparent:active {
-    border: 2px outset #009cde; }
+  color: white; }
+  .plain-links:hover {
+    text-decoration: underline; }
+  .plain-links:active {
+    color: #53565a; }
 
 .forgot-password {
   color: white;
@@ -559,7 +549,6 @@ body {
 .info-bar {
   background: #236192;
   text-align: center;
-  border-top: 1px solid silver;
   padding: 10px 0;
   margin: 0;
   position: fixed;
