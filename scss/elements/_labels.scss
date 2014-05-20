@@ -1,5 +1,4 @@
-.hidden-label{
-	visibility: none;
-	height: 7px;
-	overflow: hidden;
+.plain-label{
+	cursor: pointer;
+	color: $white;
 }
