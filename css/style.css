@@ -465,6 +465,12 @@ body {
   cursor: pointer;
   color: white; }
 
+.password-label {
+  color: white;
+  background: #e57200;
+  padding: 0 7px;
+  display: none; }
+
 .basic-input-field {
   -webkit-appearance: none;
   -moz-appearance: none;

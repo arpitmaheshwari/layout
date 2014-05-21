@@ -15,7 +15,7 @@
 				<h4 class="white-color">Login</h4>
 				<div class="login-input-set">		
 					<input required type="email" autofocus name="login-username" value="" placeholder="Username / Email" class="basic-input-field">
-
+					<label id="login-password-label" class="password-label" name="login-password"></label>
 					<input required type="password" name="login-password" value="" placeholder="Password" class="basic-input-field">			
 				</div>
 
@@ -70,9 +70,17 @@
 		<!-- // <script type="text/javascript" src="../js/login-init.js"></script> -->
 		<script type="text/javascript" src="../js/libs/rem.min.js"></script>
 
-<!--		<script type="text/javascript">
-		  	$('.login-form').parsley();
-		</script>-->
+		<script type="text/javascript">
+		  	$('input[type="password"]').keypress(function(e) { 
+			    var s = String.fromCharCode( e.which );
+			    if ( s.toUpperCase() === s && s.toLowerCase() !== s && !e.shiftKey ) {
+			        $('#login-password-label').text("CAPS is on").css({'display':'block'});
+			    }
+			    else{
+			        $('#login-password-label').css({'display':'none'});		    	
+			    }
+			});
+		</script>
 
 	</body>
 </html>
