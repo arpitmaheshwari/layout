@@ -1,8 +1,8 @@
 .basic-input-field{
-	@include ptc-text-input;
+	@include ptc-text-input($margin:0 0 7px);
 }
 .input-half-width{
-	@include ptc-text-input($width: 48.5%);
+	@include ptc-text-input($width: 49% , $margin:0 0 7px);
 	@media (max-width: 439px)	{
 		min-width: 100%;
 	}	

@@ -475,7 +475,8 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: white;
-  padding: 7px; }
+  padding: 7px;
+  margin: 0 0 7px; }
 
 .input-half-width {
   -webkit-appearance: none;
@@ -483,11 +484,12 @@ body {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  width: 48.5%;
+  width: 49%;
   border-width: 2px;
   border-style: solid;
   border-color: white;
-  padding: 7px; }
+  padding: 7px;
+  margin: 0 0 7px; }
   @media (max-width: 439px) {
     .input-half-width {
       min-width: 100%; } }
