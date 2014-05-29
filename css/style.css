@@ -407,6 +407,9 @@ body {
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans', sans-serif; }
 
+main {
+  padding-bottom: 55px; }
+
 .login-button {
   -webkit-appearance: none;
   -moz-appearance: none;
