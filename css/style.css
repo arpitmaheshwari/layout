@@ -435,8 +435,10 @@ body {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-left: 6px solid white; }
+  border-left: 6px solid white;
+  border-radius: 0; }
   .arrow-checkbox:checked {
+    background: initial;
     border: 6px solid transparent;
     border-top: 6px solid white;
     border-bottom: 4px solid transparent; }

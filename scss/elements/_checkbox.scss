@@ -5,8 +5,10 @@
   height: 0;
   border: 6px solid transparent;
   border-left: 6px solid $white;
+  border-radius: 0;//Fix for safari
 
   &:checked{
+    background: initial;//Fix for Safari
     border: 6px solid transparent;  
     border-top: 6px solid $white;
     border-bottom: 4px solid transparent;
