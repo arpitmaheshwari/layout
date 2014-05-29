@@ -415,7 +415,7 @@ body {
   appearance: none;
   border: 2px solid #009cde;
   margin: 10px auto;
-  padding: 10px;
+  padding: 13px;
   color: white;
   background: #236192;
   width: 100%;
@@ -481,7 +481,7 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: white;
-  padding: 7px;
+  padding: 10px;
   margin: 0 0 7px; }
 
 .input-half-width {
@@ -494,7 +494,7 @@ body {
   border-width: 2px;
   border-style: solid;
   border-color: white;
-  padding: 7px;
+  padding: 10px;
   margin: 0 0 7px; }
   @media (max-width: 439px) {
     .input-half-width {
@@ -523,14 +523,12 @@ body {
   margin: auto;
   padding-top: 95px; }
 
-.login-button-set {
-  /*padding-top: 35px;*/ }
-  .login-button-set ul, .login-button-set li {
-    display: inline; }
+.login-input-set {
+  margin-bottom: 7px; }
 
 #ilt-name-fields {
   opacity: 0;
-  /*margin: 8px auto 0px;	*/ }
+  margin-bottom: 15px; }
   #ilt-name-fields ul, #ilt-name-fields li {
     display: inline; }
 

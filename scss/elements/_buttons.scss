@@ -1,4 +1,4 @@
 .login-button{
-	@include ptc-set-style($background : $blueDark , $width: 100% , $appearence: none , $border-color:$blue , $border-active:$blue );
+	@include ptc-set-style($background : $blueDark , $width: 100% , $appearence: none , $border-color:$blue , $border-active:$blue , $padding:13px);
 	font-weight: bold;
 }
