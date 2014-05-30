@@ -17,12 +17,14 @@
 @import "base/mixins/_vertical-nav";
 @import "base/mixins/_link-color";
 
-@import "base/_web-fonts";
 @import "base/_icomoon";
+@import "base/_font-awesome";
+@import "base/_web-fonts";
+
 @import "base/_images";
 @import "base/_reuse";
-@import "base/_root";
 @import "base/_typography";
+@import "base/_root";
 
 // First loading error & loading template classes
 @import "modules/_loading";
