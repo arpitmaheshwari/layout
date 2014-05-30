@@ -24,3 +24,7 @@
 		color: $greyDark;
 	}
 }
+.language-links{
+	@extend .plain-links;
+	padding: 0 12px;
+}
