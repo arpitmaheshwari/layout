@@ -493,7 +493,8 @@ main {
   appearance: none;
   background-color: transparent;
   border: 0;
-  color: white; }
+  color: white;
+  padding: 0 5px; }
   .plain-dropdown option {
     background: #236192;
     cursor: pointer;
