@@ -1,5 +1,5 @@
 .login-form{
-	max-width: 440px;
+	max-width: 450px;
 	margin: auto;
 	padding-top: 60px;
 }
@@ -7,13 +7,13 @@
 	margin-bottom: 7px;
 }
 #ilt-name-fields{
-	height: 0;
+	max-height: 0;
 	overflow: hidden;
 	margin-bottom: 25px;
-	@include transition(opacity , 0.45s linear);
+	@include transition(max-height , 0.45s linear);
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{
-	height: 108px;
+	max-height: 250px;
 }
 #ILT-user-checkbox:checked ~ label div.arrow{
     background: initial;//Fix for Safari

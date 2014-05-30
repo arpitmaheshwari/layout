@@ -504,7 +504,7 @@ main {
     outline: 0; }
 
 .login-form {
-  max-width: 440px;
+  max-width: 450px;
   margin: auto;
   padding-top: 60px; }
 
@@ -512,15 +512,15 @@ main {
   margin-bottom: 7px; }
 
 #ilt-name-fields {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   margin-bottom: 25px;
-  -webkit-transition: opacity, 0.45s linear;
-  -moz-transition: opacity, 0.45s linear;
-  transition: opacity, 0.45s linear; }
+  -webkit-transition: max-height, 0.45s linear;
+  -moz-transition: max-height, 0.45s linear;
+  transition: max-height, 0.45s linear; }
 
 #ILT-user-checkbox:checked ~ #ilt-name-fields {
-  height: 108px; }
+  max-height: 250px; }
 
 #ILT-user-checkbox:checked ~ label div.arrow {
   background: initial;
