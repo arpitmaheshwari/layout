@@ -417,7 +417,7 @@ main {
   -o-appearance: none;
   appearance: none;
   border: 2px solid #009cde;
-  margin: 10px auto;
+  margin: 0 0 10px;
   padding: 13px;
   color: white;
   background: #236192;
@@ -532,16 +532,15 @@ main {
   margin-bottom: 7px; }
 
 #ilt-name-fields {
-  opacity: 0;
-  margin-bottom: 15px; }
-  #ilt-name-fields ul, #ilt-name-fields li {
-    display: inline; }
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 25px;
+  -webkit-transition: opacity, 0.45s linear;
+  -moz-transition: opacity, 0.45s linear;
+  transition: opacity, 0.45s linear; }
 
-#ILT-user-checkbox:checked ~ #ilt-name-fields, #ILT-user-checkbox:checked ~ .warning-msg {
-  opacity: 1;
-  -webkit-transition: opacity, 0.45s ease-in;
-  -moz-transition: opacity, 0.45s ease-in;
-  transition: opacity, 0.45s ease-in; }
+#ILT-user-checkbox:checked ~ #ilt-name-fields {
+  height: 108px; }
 
 .info-bar {
   background: #236192;
@@ -596,7 +595,6 @@ textarea.parsley-error {
   opacity: 1; }
 
 .warning-msg {
-  opacity: 0;
   color: white;
   font-size: 0.85714rem; }
 

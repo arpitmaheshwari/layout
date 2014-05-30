@@ -7,13 +7,11 @@
 	margin-bottom: 7px;
 }
 #ilt-name-fields{
-	opacity: 0;
-	margin-bottom: 15px;
-	ul,li{
-		display: inline;
-	}
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 25px;
+	@include transition(opacity , 0.45s linear);
 }
-#ILT-user-checkbox:checked ~ #ilt-name-fields , #ILT-user-checkbox:checked ~ .warning-msg{
-	opacity: 1;
-	@include transition(opacity , 0.45s ease-in)
+#ILT-user-checkbox:checked ~ #ilt-name-fields{
+	height: 108px;
 }
