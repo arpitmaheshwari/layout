@@ -526,7 +526,7 @@ main {
 .login-form {
   max-width: 440px;
   margin: auto;
-  padding-top: 95px; }
+  padding-top: 60px; }
 
 .login-input-set {
   margin-bottom: 7px; }
@@ -601,13 +601,12 @@ textarea.parsley-error {
   font-size: 0.85714rem; }
 
 header {
-  background: white;
+  background: #009cde;
   text-align: center; }
   @media (min-width: 800px) {
     header {
-      padding: 5px; } }
+      padding: 30px 0 5px; } }
 
 .banner-image {
   width: 100%;
-  padding: 10px 5px 0;
   max-width: 500px; }
