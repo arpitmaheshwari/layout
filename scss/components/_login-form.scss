@@ -15,3 +15,9 @@
 #ILT-user-checkbox:checked ~ #ilt-name-fields{
 	height: 108px;
 }
+#ILT-user-checkbox:checked ~ label div.arrow{
+    background: initial;//Fix for Safari
+    border: 6px solid transparent;  
+    border-top: 6px solid $white;
+    border-bottom: 4px solid transparent;
+} 

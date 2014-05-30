@@ -428,26 +428,6 @@ main {
   .login-button:active {
     border: 2px outset #009cde; }
 
-.arrow-checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-left: 6px solid white;
-  border-radius: 0; }
-  .arrow-checkbox:checked {
-    background: initial;
-    border: 6px solid transparent;
-    border-top: 6px solid white;
-    border-bottom: 4px solid transparent; }
-  .arrow-checkbox:focus {
-    outline: 0; }
-
 .plain-links {
   display: inline;
   text-decoration: none;
@@ -541,6 +521,21 @@ main {
 
 #ILT-user-checkbox:checked ~ #ilt-name-fields {
   height: 108px; }
+
+#ILT-user-checkbox:checked ~ label div.arrow {
+  background: initial;
+  border: 6px solid transparent;
+  border-top: 6px solid white;
+  border-bottom: 4px solid transparent; }
+
+.arrow {
+  display: inline-block;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 6px solid white;
+  border-radius: 0; }
 
 .info-bar {
   background: #236192;

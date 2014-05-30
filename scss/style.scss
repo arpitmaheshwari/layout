@@ -30,7 +30,7 @@
 
 //Loading all UI elements
 @import "elements/_buttons";
-@import "elements/_checkbox";
+// @import "elements/_checkbox";
 @import "elements/_icons";
 @import "elements/_links";
 @import "elements/_labels";
@@ -40,6 +40,7 @@
 
 // Loading components
 @import "components/_login-form";
+@import "components/_arrow";
 @import "components/_search-bar";
 @import "components/_nav";
 @import "components/_menu";
