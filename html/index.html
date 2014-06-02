@@ -15,11 +15,14 @@
 		<!-- Login form -->
 			<form class="login-form" autocomplete="on" name="userForm" ng-submit="authenticate(userForm.$valid)" novalidate>
 				<h4 class="white-color">Log In</h4>
-				<div class="login-input-set">		
-					<input required type="email" placeholder="Username / Email" class="basic-input-field" name="email" class="form-control" ng-model="email" />
-            		<p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="validation-error">Enter a valid email.</p>
+				<div class="login-input-set">
+						
+					<input required type="email" placeholder="Username / Email" class="basic-input-field" name="loginEmail" class="form-control" ng-model="loginEmail" required />
+					<p ng-show="userForm.loginEmail.$error.required && !userForm.loginEmail.$pristine" class="validation-error">Email is required.</p>
+            		<p ng-show="!userForm.loginEmail.$error.required && userForm.loginEmail.$invalid && !userForm.loginEmail.$pristine" class="validation-error">Enter a valid email.</p>
 
-					<input required type="password" name="login-password" value="" placeholder="Password" class="basic-input-field"/>	
+					<input required type="password" name="loginPassword" value="" placeholder="Password" class="basic-input-field" ng-model="loginPassword"/>	
+					<p ng-show="userForm.loginPassword.$error.required && !userForm.loginPassword.$pristine" class="validation-error">Email is required.</p>
 	
 				</div>
 
