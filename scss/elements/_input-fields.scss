@@ -1,5 +1,5 @@
 .basic-input-field{
-	@include ptc-text-input($margin:0 0 7px);
+	@include ptc-text-input($margin:7px 0 0);
 }
 .input-half-width{
 	@include ptc-text-input($width: 49% , $margin:0 0 7px);

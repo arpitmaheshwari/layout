@@ -17,7 +17,7 @@
 	margin: $margin;
 	padding: $padding;
 	color: $color;
-	background: $background;
+	background: $grey;
 	@if $width{
 		width: $width;
 	}
@@ -25,13 +25,14 @@
 		min-width: $minWidth;
 	}
 
+	&:enabled{
+		background: $background;
+		&:hover{
+			border: 2px solid $background;
+		}
 
-
-	&:hover{
-		border: 2px solid $background;
-	}
-
-	&:active{
-		border: 2px outset $border-active;
+		&:active{
+			border: 2px outset $border-active;
+		}
 	}
 }

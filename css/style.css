@@ -1977,13 +1977,22 @@ main {
   margin: 0 0 10px;
   padding: 13px;
   color: white;
-  background: #236192;
+  background: #c8c9c7;
   width: 100%;
-  font-weight: bold; }
-  .login-button:hover {
-    border: 2px solid #236192; }
-  .login-button:active {
-    border: 2px outset #009cde; }
+  font-weight: bold;
+  /*	&:disabled{
+  		background: $grey;
+  
+  		&:hover{
+  			border-color:none;
+  		}
+  	}*/ }
+  .login-button:enabled {
+    background: #236192; }
+    .login-button:enabled:hover {
+      border: 2px solid #236192; }
+    .login-button:enabled:active {
+      border: 2px outset #009cde; }
 
 .plain-links, .language-links {
   display: inline;
@@ -2027,7 +2036,7 @@ main {
   border-style: solid;
   border-color: white;
   padding: 10px;
-  margin: 0 0 7px; }
+  margin: 7px 0 0; }
 
 .input-half-width {
   -webkit-appearance: none;
@@ -2051,7 +2060,7 @@ main {
   padding-top: 60px; }
 
 .login-input-set {
-  margin-bottom: 7px; }
+  margin-bottom: 10px; }
 
 #ilt-name-fields {
   max-height: 0;
@@ -2078,6 +2087,11 @@ main {
   border: 6px solid transparent;
   border-left: 6px solid white;
   border-radius: 0; }
+
+.validation-error {
+  background: red;
+  color: white;
+  margin: 0 0 10px; }
 
 .info-bar {
   background: #236192;
