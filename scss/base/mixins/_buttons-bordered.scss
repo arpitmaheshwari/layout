@@ -13,11 +13,14 @@
 	@if $appearence{
 		@include appearance($appearence);
 	}
-	border: $border-width $border-style $border-color;
+
+	$disabledBg: $grey;
+	background: $disabledBg;
+	border: $border-width $border-style $transparent;
+
 	margin: $margin;
 	padding: $padding;
 	color: $color;
-	background: $grey;
 	@if $width{
 		width: $width;
 	}
@@ -27,6 +30,7 @@
 
 	&:enabled{
 		background: $background;
+		border: $border-width $border-style $border-color;
 		&:hover{
 			border: 2px solid $background;
 		}

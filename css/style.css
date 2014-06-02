@@ -1960,7 +1960,7 @@ html {
 
 body {
   height: 100%;
-  background: #009cde;
+  background: #d9d9d9;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans', sans-serif; }
 
@@ -1973,11 +1973,11 @@ main {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  border: 2px solid #009cde;
-  margin: 0 0 10px;
+  background: #c8c9c7;
+  border: 2px solid transparent;
+  margin: 0 0 13px;
   padding: 13px;
   color: white;
-  background: #c8c9c7;
   width: 100%;
   font-weight: bold;
   /*	&:disabled{
@@ -1988,11 +1988,12 @@ main {
   		}
   	}*/ }
   .login-button:enabled {
-    background: #236192; }
+    background: #4c8c2b;
+    border: 2px solid #4c8c2b; }
     .login-button:enabled:hover {
-      border: 2px solid #236192; }
+      border: 2px solid #4c8c2b; }
     .login-button:enabled:active {
-      border: 2px outset #009cde; }
+      border: 2px outset #4c8c2b; }
 
 .plain-links, .language-links {
   display: inline;
@@ -2004,9 +2005,8 @@ main {
     color: #53565a; }
 
 .forgot-password {
-  color: white;
   text-decoration: none;
-  float: right; }
+  color: #c8c9c7; }
   .forgot-password:hover {
     text-decoration: underline; }
   .forgot-password:active {
@@ -2016,8 +2016,7 @@ main {
   padding: 0 12px; }
 
 .plain-label {
-  cursor: pointer;
-  color: white; }
+  cursor: pointer; }
 
 .password-label {
   color: white;
@@ -2032,10 +2031,7 @@ main {
   -o-appearance: none;
   appearance: none;
   width: 100%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  padding: 10px;
+  padding: 12px 10px;
   margin: 7px 0 0; }
 
 .input-half-width {
@@ -2045,10 +2041,7 @@ main {
   -o-appearance: none;
   appearance: none;
   width: 49%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  padding: 10px;
+  padding: 12px 10px;
   margin: 0 0 7px; }
   @media (max-width: 439px) {
     .input-half-width {
@@ -2056,8 +2049,9 @@ main {
 
 .login-form {
   max-width: 450px;
-  margin: auto;
-  padding-top: 60px; }
+  margin: 65px auto 0;
+  padding: 20px 25px 30px;
+  background: white; }
 
 .login-input-set {
   margin-bottom: 10px; }
@@ -2076,7 +2070,7 @@ main {
 #ILT-user-checkbox:checked ~ label div.arrow {
   background: initial;
   border: 6px solid transparent;
-  border-top: 6px solid white;
+  border-top: 6px solid;
   border-bottom: 4px solid transparent; }
 
 .arrow {
@@ -2085,7 +2079,7 @@ main {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-left: 6px solid white;
+  border-left: 6px solid;
   border-radius: 0; }
 
 .validation-error {
@@ -2095,7 +2089,6 @@ main {
   margin: 0 0 10px; }
 
 .info-bar {
-  background: #236192;
   text-align: center;
   padding: 10px 0;
   margin: 0;
@@ -2147,11 +2140,9 @@ textarea.parsley-error {
   opacity: 1; }
 
 .warning-msg {
-  color: white;
   font-size: 0.85714rem; }
 
 header {
-  background: #009cde;
   text-align: center; }
   @media (min-width: 800px) {
     header {
