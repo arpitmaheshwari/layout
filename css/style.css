@@ -2058,7 +2058,7 @@ main {
 #ilt-name-fields {
   max-height: 0;
   overflow: hidden;
-  margin-bottom: 25px;
+  margin-bottom: 55px;
   -webkit-transition: max-height, 0.45s linear;
   -moz-transition: max-height, 0.45s linear;
   transition: max-height, 0.45s linear; }

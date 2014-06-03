@@ -10,7 +10,7 @@
 #ilt-name-fields{
 	max-height: 0;
 	overflow: hidden;
-	margin-bottom: 25px;
+	margin-bottom: 55px;
 	@include transition(max-height , 0.45s linear);
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{
