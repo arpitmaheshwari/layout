@@ -1960,9 +1960,9 @@ html {
 
 body {
   height: 100%;
-  background: #d9d9d9;
+  background: #236192;
   text-rendering: optimizeLegibility;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Avenir 35 Light' , 'Open Sans' , sans-serif; }
 
 main {
   padding-bottom: 55px; }
@@ -1973,7 +1973,7 @@ main {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: #d9d9d9;
+  background: #c8c9c7;
   border: 2px solid transparent;
   margin: 0 0 15px;
   padding: 14px;
@@ -2054,7 +2054,6 @@ main {
   max-width: 450px;
   margin: 95px auto 0;
   padding: 20px 25px 30px;
-  background: #c8c9c7;
   color: white; }
 
 .login-input-set {
@@ -2094,7 +2093,6 @@ main {
 
 .info-bar {
   text-align: center;
-  background: #53565a;
   padding: 10px 0;
   margin: 0;
   position: fixed;

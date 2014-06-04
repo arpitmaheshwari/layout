@@ -14,7 +14,7 @@
 		@include appearance($appearence);
 	}
 
-	$disabledBg: $greyLight;
+	$disabledBg: $grey;
 	background: $disabledBg;
 	border: $border-width $border-style $transparent;
 
