@@ -12,9 +12,8 @@
 	}
 }
 .forgot-password{
-	color: $white;
 	text-decoration: none;
-	float: right;
+	color: $white;
 
 	&:hover{
 		text-decoration: underline;
@@ -27,4 +26,9 @@
 .language-links{
 	@extend .plain-links;
 	padding: 0 12px;
+}
+
+.link-active{
+	text-decoration: underline;
+	font-family: monospace;
 }

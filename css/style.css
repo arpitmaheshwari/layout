@@ -2004,9 +2004,8 @@ main {
     color: #53565a; }
 
 .forgot-password {
-  color: white;
   text-decoration: none;
-  float: right; }
+  color: white; }
   .forgot-password:hover {
     text-decoration: underline; }
   .forgot-password:active {
@@ -2014,6 +2013,10 @@ main {
 
 .language-links {
   padding: 0 12px; }
+
+.link-active {
+  text-decoration: underline;
+  font-family: monospace; }
 
 .plain-label {
   cursor: pointer;
