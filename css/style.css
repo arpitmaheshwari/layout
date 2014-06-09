@@ -2066,15 +2066,15 @@ main {
   margin-bottom: 10px; }
 
 #ilt-name-fields {
-  max-height: 0;
+  opacity: 0;
   overflow: hidden;
   margin-bottom: 25px;
-  -webkit-transition: max-height, 0.45s linear;
-  -moz-transition: max-height, 0.45s linear;
-  transition: max-height, 0.45s linear; }
+  -webkit-transition: opacity, 0.4s linear;
+  -moz-transition: opacity, 0.4s linear;
+  transition: opacity, 0.4s linear; }
 
 #ILT-user-checkbox:checked ~ #ilt-name-fields {
-  max-height: 250px; }
+  opacity: 1; }
 
 #ILT-user-checkbox:checked ~ label div.arrow {
   background: initial;
