@@ -1961,8 +1961,7 @@ html {
 body {
   height: 100%;
   background: #236192;
-  text-rendering: optimizeLegibility;
-  font-family: 'Avenir 35 Light' , 'Open Sans' , sans-serif; }
+  text-rendering: optimizeLegibility; }
 
 main {
   padding-bottom: 55px; }
@@ -1973,7 +1972,7 @@ main {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background: #d9d9d9;
+  background: #c8c9c7;
   border: 2px solid transparent;
   margin: 0 0 15px;
   padding: 14px;
@@ -1995,6 +1994,9 @@ main {
     .login-button:enabled:active {
       border: 2px outset #4c8c2b; }
 
+.humble-checkbox {
+  vertical-align: -10%; }
+
 .plain-links, .language-links {
   display: inline;
   text-decoration: none;
@@ -2014,6 +2016,10 @@ main {
 
 .language-links {
   padding: 0 12px; }
+
+.link-active {
+  text-decoration: underline;
+  font-family: monospace; }
 
 .plain-label {
   cursor: pointer; }
@@ -2055,9 +2061,6 @@ main {
   margin: 95px auto 0;
   padding: 20px 25px 30px;
   color: white; }
-
-.login-input-set {
-  margin-bottom: 15px; }
 
 #ilt-name-fields {
   max-height: 0;

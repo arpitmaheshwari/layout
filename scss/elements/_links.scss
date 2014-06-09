@@ -27,3 +27,8 @@
 	@extend .plain-links;
 	padding: 0 12px;
 }
+
+.link-active{
+	text-decoration: underline;
+	font-family: monospace;
+}

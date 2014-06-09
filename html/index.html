@@ -6,16 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />		
 		<script type="text/javascript" src="../js/libs/angular-1.2.6.js"></script>
 		<script type="text/javascript">
-		    (function() {
-		        var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=lcEwv6iz4z',
-		            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-		            trial = document.createElement('script');
-		        trial.type = 'text/javascript';
-		        trial.async = true;
-		        trial.src = protocol + path;
-		        var head = document.getElementsByTagName("head")[0];
-		        head.appendChild(trial);
-		    })();
+		    // (function() {
+		    //     var path = '//easy.myfonts.net/v2/js?sid=10336(font-family=Avenir+35+Light)&sid=10338(font-family=Avenir+55+Roman)&sid=10340(font-family=Avenir+85+Heavy)&sid=10344(font-family=Avenir+65+Medium)&key=lcEwv6iz4z',
+		    //         protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+		    //         trial = document.createElement('script');
+		    //     trial.type = 'text/javascript';
+		    //     trial.async = true;
+		    //     trial.src = protocol + path;
+		    //     var head = document.getElementsByTagName("head")[0];
+		    //     head.appendChild(trial);
+		    // })();
 		</script>
 	</head>
 	<body ng-app="validationApp" ng-controller="mainController">
@@ -27,6 +27,11 @@
 		<!-- Login form -->
 			<form class="login-form" autocomplete="on" name="userForm" ng-submit="authenticate(userForm.$valid)" novalidate>
 				<h4>Log In</h4>
+				<input type="checkbox" class="humble-checkbox" name="is-ILT-user" value="" id="ILT-user-checkbox" >
+				<label for="ILT-user-checkbox" class="plain-label">
+					<!-- <div class="arrow" ></div> -->
+					I am attending a PTC University class
+				</label>
 				<div class="login-input-set">
 						
 					<input required type="email" placeholder="Username / Email" class="basic-input-field" name="loginEmail" class="form-control" ng-model="loginEmail" required />
@@ -38,16 +43,11 @@
 	
 				</div>
 
-				<input type="checkbox" name="is-ILT-user" value="" id="ILT-user-checkbox" class="not-displayed">
-				<label for="ILT-user-checkbox" class="plain-label">
-					<div class="arrow" ></div>
-					I am attending a PTC University class
-				</label>
 
 				<div id="ilt-name-fields">
+					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
+					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field">
 					<p class="warning-msg">Thank you for joining us! Please enter your first and last name before logging in.</p>
-					<input type="text" name="login-username" value="" placeholder="First Name" class="input-half-width">
-					<input type="text" name="login-username" value="" placeholder="Last Name" class="input-half-width">
 				</div>
 				<div class="login-button-set">
 					<input type="submit" name="" value="Log In" class="login-button" ng-disabled="userForm.$invalid"/>
@@ -62,7 +62,7 @@
 			<div class="info-bar">
 				<p>
 					<!-- <i class="fa fa-language white-color"></i> -->
-					<a href="" class="language-links" title="English" value="0">English</a>
+					<a href="" class="language-links link-active" title="English" value="0">English</a>
 					<a href="" class="language-links" title="German" value="2">Deutsch</a>
 					<a href="" class="language-links" title="French" value="1">Français</a>
 					<a href="" class="language-links" title="Italian" value="6">Italiano</a>
