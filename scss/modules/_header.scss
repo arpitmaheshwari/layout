@@ -1,7 +1,8 @@
 header{
 	background: $blue;
 	text-align: center;
-	@media (min-width: 800px)  { 
+	padding: 10px 0;
+	@media (min-width: 550px)  { 
 		padding: 30px 0 5px;
 	}	
 }

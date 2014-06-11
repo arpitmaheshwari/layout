@@ -1952,7 +1952,8 @@ th {
   color: white; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-radius: 0; }
 
 html {
   font-size: 14px;
@@ -1965,7 +1966,7 @@ body {
   font-family: 'Open Sans', sans-serif; }
 
 main {
-  padding-bottom: 55px; }
+  padding-bottom: 75px; }
 
 .login-button {
   -webkit-appearance: none;
@@ -2077,7 +2078,10 @@ main {
 .login-form {
   max-width: 450px;
   margin: auto;
-  padding-top: 60px; }
+  z-index: 1; }
+  @media (min-width: 1050px) {
+    .login-form {
+      margin: 95px auto 0; } }
 
 .login-input-set {
   margin-bottom: 10px; }
@@ -2172,8 +2176,9 @@ textarea.parsley-error {
 
 header {
   background: #009cde;
-  text-align: center; }
-  @media (min-width: 800px) {
+  text-align: center;
+  padding: 10px 0; }
+  @media (min-width: 550px) {
     header {
       padding: 30px 0 5px; } }
 

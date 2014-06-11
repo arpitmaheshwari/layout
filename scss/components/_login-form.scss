@@ -1,7 +1,10 @@
 .login-form{
 	max-width: 450px;
 	margin: auto;
-	padding-top: 60px;
+	z-index: 1;
+	@media (min-width: 1050px) {
+		margin: 95px auto 0 ;
+	}
 }
 .login-input-set{
 	margin-bottom: 10px;
