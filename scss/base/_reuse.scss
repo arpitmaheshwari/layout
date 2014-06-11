@@ -1,8 +1,16 @@
 .not-displayed{
 	display: none;
+	  
+	&:focus,&:active{
+   		 outline:none;  //remove the annoying outline
+  	}
 }
 .not-visible{
 	visibility: hidden;
+
+	&:focus,&:active{
+   		 outline:none;  //remove the annoying outline
+  	}
 }
 .white-color{
 	color: white;
