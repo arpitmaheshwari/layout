@@ -32,3 +32,18 @@
 	text-decoration: underline;
 	font-family: monospace;
 }
+.link-block{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border: 2px solid #009cde;
+  	margin: 10px auto;
+ 	padding: 10px;
+  	color: white;
+  	width: 100%;
+  background: $blueDark;
+}
+.link-block:hover {
+border: 2px solid #236192; }
+.link-block:active {
+border: 2px outset #009cde; }
