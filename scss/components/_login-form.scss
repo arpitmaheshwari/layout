@@ -1,11 +1,11 @@
 .login-form{
 	max-width: 450px;
-	padding: 20px 25px 30px;
+	// padding: 20px 25px 30px;
 	color: $white;
-	margin: auto;
+	// margin: auto;
 	z-index: 1;
 	@media (min-width: 1050px) {
-		margin: 95px auto 0 ;
+		margin: 95px 0 0 ;
 	}
 }
 .login-input-set{

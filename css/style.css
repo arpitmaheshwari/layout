@@ -1963,8 +1963,22 @@ html {
   height: 100%; }
 
 body {
+  padding-left: 70px;
   height: 100%;
-  background: #009cde;
+  background: white url("../images/1.jpg") no-repeat right top;
+  background: white url("../images/2.jpg") no-repeat right top;
+  background: white url("../images/3.jpg") no-repeat right top;
+  background: white url("../images/4.png") no-repeat right top;
+  background: white url("../images/5.jpg") no-repeat right top;
+  background: white url("../images/6.png") no-repeat right top;
+  background: white url("../images/7.jpg") no-repeat right top;
+  background: white url("../images/8.jpg") no-repeat right top;
+  background: white url("../images/9.jpg") no-repeat right top;
+  background: white url("../images/10.jpg") no-repeat right top;
+  background: white url("../images/11.png") no-repeat right top;
+  background: white url("../images/12.jpg") no-repeat right top;
+  background: white url("../images/13.jpg") no-repeat right top;
+  background-size: cover;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans' ,  sans-serif; }
 
@@ -2098,13 +2112,11 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
 
 .login-form {
   max-width: 450px;
-  padding: 20px 25px 30px;
   color: white;
-  margin: auto;
   z-index: 1; }
   @media (min-width: 1050px) {
     .login-form {
-      margin: 95px auto 0; } }
+      margin: 95px 0 0; } }
 
 .login-input-set {
   margin-bottom: 15px; }
@@ -2142,7 +2154,6 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
   margin: 0 0 10px; }
 
 .info-bar {
-  background: #236192;
   text-align: center;
   color: white;
   padding: 10px 0;
@@ -2198,7 +2209,6 @@ textarea.parsley-error {
   font-size: 0.85714rem; }
 
 header {
-  text-align: center;
   padding: 10px 0; }
   @media (min-width: 550px) {
     header {

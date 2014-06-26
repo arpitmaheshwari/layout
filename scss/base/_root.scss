@@ -6,8 +6,23 @@ html{
 	height: 100%;
 }
 body{
+	padding-left: 70px;
 	height: 100%;
-	background: $blue;
+	// background: $blue;
+	background: #ffffff url($base-image-path + "1.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "2.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "3.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "4.png") no-repeat right top;
+	background: #ffffff url($base-image-path + "5.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "6.png") no-repeat right top;
+	background: #ffffff url($base-image-path + "7.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "8.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "9.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "10.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "11.png") no-repeat right top;
+	background: #ffffff url($base-image-path + "12.jpg") no-repeat right top;
+	background: #ffffff url($base-image-path + "13.jpg") no-repeat right top;
+	background-size: cover;
 	text-rendering: optimizeLegibility;
 	font-family: 'Open Sans' ,  sans-serif;	
 }
