@@ -13,7 +13,6 @@ input[type='checkbox']{
  & + label{
  	width: 95%;
    cursor:pointer; 
-   display:inline-block;
    position: relative;
    padding-left:25px;
    margin-right:10px;
@@ -39,7 +38,7 @@ input[type='checkbox']{
     }
   }
   &:checked + label:before{
-     box-shadow: 0 0 0 10px $blue inset;    
+     box-shadow: 0 0 0 10px $blueDark inset;    
   }
 }
 /*Checkbox Specific styles*/

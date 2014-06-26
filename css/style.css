@@ -1964,8 +1964,9 @@ html {
 
 body {
   height: 100%;
-  background: #236192;
-  text-rendering: optimizeLegibility; }
+  background: #009cde;
+  text-rendering: optimizeLegibility;
+  font-family: 'Open Sans' ,  sans-serif; }
 
 main {
   padding-bottom: 55px; }
@@ -2009,7 +2010,6 @@ input[type='checkbox'] {
   input[type='checkbox'] + label {
     width: 95%;
     cursor: pointer;
-    display: inline-block;
     position: relative;
     padding-left: 25px;
     margin-right: 10px;
@@ -2032,7 +2032,7 @@ input[type='checkbox'] {
     input[type='checkbox'] + label:after {
       color: #fff; }
   input[type='checkbox']:checked + label:before {
-    box-shadow: 0 0 0 10px #009cde inset; }
+    box-shadow: 0 0 0 10px #236192 inset; }
 
 /*Checkbox Specific styles*/
 input[type='checkbox'] + label:before {
@@ -2046,21 +2046,12 @@ input[type='checkbox'] + label:hover:after {
 input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + label:hover:after {
   color: #fff; }
 
-.plain-links, .language-links {
-  display: inline;
-  text-decoration: none;
-  color: white; }
-  .plain-links:hover, .language-links:hover {
-    text-decoration: underline; }
-  .plain-links:active, .language-links:active {
-    color: #53565a; }
-
-.forgot-password {
+.plain-link, .language-links {
   text-decoration: none;
   color: inherit; }
-  .forgot-password:hover {
+  .plain-link:hover, .language-links:hover {
     text-decoration: underline; }
-  .forgot-password:active {
+  .plain-link:active, .language-links:active {
     color: #53565a; }
 
 .language-links {
@@ -2116,12 +2107,12 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
       margin: 95px auto 0; } }
 
 .login-input-set {
-  margin-top: 7px; }
+  margin-bottom: 15px; }
 
 #ilt-name-fields {
   max-height: 0;
   overflow: hidden;
-  margin-bottom: 55px;
+  margin: 6px 0 55px;
   -webkit-transition: max-height, 0.45s linear;
   -moz-transition: max-height, 0.45s linear;
   transition: max-height, 0.45s linear; }
@@ -2151,7 +2142,9 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
   margin: 0 0 10px; }
 
 .info-bar {
+  background: #236192;
   text-align: center;
+  color: white;
   padding: 10px 0;
   margin: 0;
   position: fixed;

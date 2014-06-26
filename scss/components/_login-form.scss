@@ -9,12 +9,12 @@
 	}
 }
 .login-input-set{
-	margin-top: 7px;
+	margin-bottom: 15px;
 }
 #ilt-name-fields{
 	max-height: 0;
 	overflow: hidden;
-	margin-bottom: 55px;
+	margin: 6px 0 55px;
 	@include transition(max-height , 0.45s linear);
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{

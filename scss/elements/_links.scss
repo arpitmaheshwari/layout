@@ -1,17 +1,4 @@
-.plain-links{
-	display: inline;
-	text-decoration: none;
-	color: $white;
-
-	&:hover{
-		text-decoration: underline;
-	}
-
-	&:active{
-		color: $greyDark;
-	}
-}
-.forgot-password{
+.plain-link{
 	text-decoration: none;
 	color: inherit;
 
@@ -24,7 +11,7 @@
 	}
 }
 .language-links{
-	@extend .plain-links;
+	@extend .plain-link;
 	padding: 0 12px;
 }
 
