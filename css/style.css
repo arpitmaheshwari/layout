@@ -1964,7 +1964,7 @@ html {
 
 body {
   height: 100%;
-  background: #009cde;
+  background: #8fd3de;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans' ,  sans-serif; }
 
@@ -2142,7 +2142,7 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
   margin: 0 0 10px; }
 
 .info-bar {
-  background: #236192;
+  background: cadetblue;
   text-align: center;
   color: white;
   padding: 10px 0;
