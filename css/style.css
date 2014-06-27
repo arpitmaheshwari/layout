@@ -1964,7 +1964,8 @@ html {
 
 body {
   height: 100%;
-  background: #009cde;
+  background: #d9d9d9;
+  color: white;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans' ,  sans-serif; }
 
@@ -1992,12 +1993,12 @@ main {
   		}
   	}*/ }
   .login-button:enabled {
-    background: #4c8c2b;
-    border: 2px solid #4c8c2b; }
+    background: #84bd00;
+    border: 2px solid #84bd00; }
     .login-button:enabled:hover {
-      border: 2px solid #4c8c2b; }
+      border: 2px solid #84bd00; }
     .login-button:enabled:active {
-      border: 2px outset #4c8c2b; }
+      border: 2px outset #84bd00; }
 
 .humble-checkbox {
   vertical-align: -10%; }
@@ -2012,8 +2013,7 @@ input[type='checkbox'] {
     cursor: pointer;
     position: relative;
     padding-left: 25px;
-    margin-right: 10px;
-    color: white; }
+    margin-right: 10px; }
     input[type='checkbox'] + label:before, input[type='checkbox'] + label:after {
       content: '';
       font-family: helvetica;
@@ -2099,9 +2099,9 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
 .login-form {
   max-width: 450px;
   padding: 20px 25px 30px;
-  color: white;
   margin: auto;
-  z-index: 1; }
+  z-index: 1;
+  background: #236192; }
   @media (min-width: 1050px) {
     .login-form {
       margin: 95px auto 0; } }
