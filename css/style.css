@@ -2107,12 +2107,12 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
       margin: 95px auto 0; } }
 
 .login-input-set {
-  margin-bottom: 15px; }
+  margin-top: 8px; }
 
 #ilt-name-fields {
   max-height: 0;
   overflow: hidden;
-  margin: 6px 0 55px;
+  margin-bottom: 55px;
   -webkit-transition: max-height, 0.45s linear;
   -moz-transition: max-height, 0.45s linear;
   transition: max-height, 0.45s linear; }

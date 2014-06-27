@@ -15,6 +15,16 @@
 		<!-- Login form -->
 			<form class="login-form" autocomplete="on" name="userForm" ng-submit="authenticate(userForm.$valid)" novalidate>
 				<h4>Log In</h4>
+
+				<input type="checkbox"  name="is-ILT-user" value="" id="ILT-user-checkbox" >
+				<label for="ILT-user-checkbox" >
+					<!-- <div class="arrow" ></div> -->
+					Register for Instructor led training
+				</label>
+				(
+				<a href="" class="white-color">What's this ?</a>
+				)
+
 				<div class="login-input-set">
 						
 					<input type="text" placeholder="Username / Email" class="basic-input-field" name="loginEmail" class="form-control" ng-model="loginEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
@@ -26,18 +36,10 @@
 	
 				</div>
 
-				<input type="checkbox"  name="is-ILT-user" value="" id="ILT-user-checkbox" >
-				<label for="ILT-user-checkbox" >
-					<!-- <div class="arrow" ></div> -->
-					I am attending a PTC University class
-				</label>
-				(
-				<a href="" class="white-color">Know More</a>
-				)
 				<div id="ilt-name-fields">
 					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
 					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field">
-					<p class="warning-msg">Thank you for joining us! Please enter your first and last name before logging in.</p>
+					<p class="warning-msg">Please provide your first and last name to enroll you in for ILT.</p>
 				</div>
 				<div class="login-button-set">
 					<input type="submit" name="" value="Log In" class="login-button" ng-disabled="userForm.$invalid"/>
