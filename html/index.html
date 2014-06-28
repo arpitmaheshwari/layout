@@ -31,7 +31,7 @@
 					<p ng-show="userForm.loginEmail.$error.required && !userForm.loginEmail.$pristine" class="validation-error">Email is required.</p>
             		<p ng-show="!userForm.loginEmail.$error.required && userForm.loginEmail.$error.pattern" class="validation-error">Please enter between A-z and 0-9.</p>
 
-					<input required type="password" name="loginPassword" value="" placeholder="Password" class="basic-input-field" ng-model="loginPassword"/>	
+					<input required type="password" name="loginPassword" value="" placeholder="Password / Class Code" class="basic-input-field" ng-model="loginPassword"/>	
 					<p ng-show="userForm.loginPassword.$error.required && !userForm.loginPassword.$pristine" class="validation-error">Password is required.</p>
 	
 				</div>

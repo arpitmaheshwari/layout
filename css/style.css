@@ -1964,9 +1964,10 @@ html {
 
 body {
   height: 100%;
-  background: #8fd3de;
   text-rendering: optimizeLegibility;
-  font-family: 'Open Sans' ,  sans-serif; }
+  font-family: 'Open Sans' ,  sans-serif;
+  background: url("../images/bgleft.png") bottom left no-repeat, url("../images/bgright.png") bottom right no-repeat;
+  background-color: #34b29d; }
 
 main {
   padding-bottom: 55px; }
@@ -1992,12 +1993,12 @@ main {
   		}
   	}*/ }
   .login-button:enabled {
-    background: #4c8c2b;
-    border: 2px solid #4c8c2b; }
+    background: #005e5d;
+    border: 2px solid #005e5d; }
     .login-button:enabled:hover {
-      border: 2px solid #4c8c2b; }
+      border: 2px solid #005e5d; }
     .login-button:enabled:active {
-      border: 2px outset #4c8c2b; }
+      border: 2px outset #005e5d; }
 
 .humble-checkbox {
   vertical-align: -10%; }
@@ -2032,7 +2033,7 @@ input[type='checkbox'] {
     input[type='checkbox'] + label:after {
       color: #fff; }
   input[type='checkbox']:checked + label:before {
-    box-shadow: 0 0 0 10px #236192 inset; }
+    box-shadow: 0 0 0 10px #005e5d inset; }
 
 /*Checkbox Specific styles*/
 input[type='checkbox'] + label:before {
@@ -2142,7 +2143,6 @@ input[type='checkbox']:checked + label:after, input[type='checkbox']:checked + l
   margin: 0 0 10px; }
 
 .info-bar {
-  background: cadetblue;
   text-align: center;
   color: white;
   padding: 10px 0;
