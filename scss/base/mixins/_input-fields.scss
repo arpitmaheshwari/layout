@@ -1,7 +1,6 @@
-@mixin ptc-text-input($border-width: 0px, $border-color: $transparent ,$margin: 7px , $padding: 14px 10px, $width: 100% , $color:false){
+@mixin ptc-text-input($margin: 7px , $padding: 14px 10px, $width: 100% , $color:false){
 	@include appearance(none);
 	width: $width;
-	border: $border-width solid $border-color;
 	padding: $padding;
 	margin: $margin;
 	@if($color){

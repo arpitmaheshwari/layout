@@ -6,7 +6,9 @@
 	@media (min-width: 1050px) {
 		margin: 95px auto 0 ;
 	}
-	background: $blueDark;
+	background: $white;
+	border-top: 3px solid $blue;
+
 }
 .login-input-set{
 	margin-top: 8px;
