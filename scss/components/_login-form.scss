@@ -1,14 +1,14 @@
-.login-form{
+.login-container{
 	max-width: 450px;
-	padding: 20px 25px 30px;
 	margin: auto;
 	z-index: 1;
-	@media (min-width: 1050px) {
-		margin: 95px auto 0 ;
-	}
+	border-top: 5px solid $redDark;
+}
+.login-form{
+	padding: 20px 25px 30px;
+	border-bottom: 5px solid $redDark;
+	margin-bottom: 15px;
 	background: $white;
-	border-top: 3px solid $blue;
-
 }
 .login-input-set{
 	margin-top: 8px;
@@ -16,7 +16,7 @@
 #ilt-name-fields{
 	max-height: 0;
 	overflow: hidden;
-	margin-bottom:  55px;
+	margin-bottom: 45px;
 	@include transition(max-height , 0.45s linear);
 }
 #ILT-user-checkbox:checked ~ #ilt-name-fields{

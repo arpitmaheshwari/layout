@@ -1,20 +1,39 @@
 .plain-link{
 	text-decoration: none;
-	color: inherit;
-
+	a:link{
+		color: inherit;
+	}
+	&:visited{
+		color: inherit;
+	}
 	&:hover{
 		text-decoration: underline;
 	}
-
 	&:active{
 		color: $greyDark;
 	}
+
 }
 .language-links{
 	@extend .plain-link;
 	padding: 0 12px;
+	color: $white;
 }
-
+.white-link{
+	@extend .plain-link;
+	a:link{
+		color: $white;
+	}
+	&:visited{
+		color: $white;
+	}
+	&:hover{
+		text-decoration: underline;
+	}
+	&:active{
+		color: $greyDark;
+	}
+}
 .link-active{
 	text-decoration: underline;
 	font-family: monospace;

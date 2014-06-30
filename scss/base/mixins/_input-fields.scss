@@ -6,4 +6,5 @@
 	@if($color){
 		color: $color;
 	}
+	border: 2px solid $grey;
 }
