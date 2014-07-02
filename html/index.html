@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="../css/style.css" />		
 		<script type="text/javascript" src="../js/libs/angular-1.2.6.js"></script>
+		<script type="text/javascript" src="../js/login-init.js"></script>
 	</head>
 	<body ng-app="validationApp" ng-controller="mainController">
 
@@ -15,8 +16,7 @@
 		<main>
 		<!-- Login form -->
 		<div>
-
-			<form class="login-form" ng-hide="showILT" autocomplete="on" name="userForm" ng-submit="showILT = !showILT" novalidate>
+			<form class="login-form" ng-hide="showILT" autocomplete="on" name="userForm" ng-submit="isILTlogin && (showILT = !showILT) || authenticate(userForm.$valid) " novalidate>
 				<h4>Log In</h4>
 
 				<div class="login-input-set" >
@@ -30,7 +30,7 @@
 	
 				</div>
 				<div class="label-container">
-				<input type="checkbox"  name="is-ILT-user" value="" id="ILT-user-checkbox" >
+				<input type="checkbox" ng-model="isILTlogin" name="isILTlogin" value="" id="ILT-user-checkbox" >
 					<label for="ILT-user-checkbox" >
 						<!-- <div class="arrow" ></div> -->
 						Am attending an Instructor Led Training</label>(
@@ -98,7 +98,6 @@
 		<!-- // <script type="text/javascript" src="../js/libs/parsley.min.js"></script> -->
 		<!-- // <script type="text/javascript" src="../js/util.js"></script> -->
 		<script type="text/javascript" src="../js/libs/rem.min.js"></script>
-		<script type="text/javascript" src="../js/login-init.js"></script>
 		<script type="text/javascript">
 		 //  	$('input[type="password"]').keypress(function(e) { 
 			//     var s = String.fromCharCode( e.which );
