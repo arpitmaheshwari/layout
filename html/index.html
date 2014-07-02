@@ -7,25 +7,21 @@
 		<script type="text/javascript" src="../js/libs/angular-1.2.6.js"></script>
 	</head>
 	<body ng-app="validationApp" ng-controller="mainController">
+		<script>
+		showILT = false;
+		</script>
 		<header>
 			<img class="banner-image" src="../images/precision-lms-logo.svg" alt="Precision-LMS">
 		</header>
 		<main>
 
 		<!-- Login form -->
-			<form class="login-form" autocomplete="on" name="userForm" ng-submit="authenticate(userForm.$valid)" novalidate>
+		<div>
+
+			<form class="login-form" ng-show="showILT" autocomplete="on" name="userForm" ng-submit="showILT = !showILT" novalidate>
 				<h4>Log In</h4>
 
-				<input type="checkbox"  name="is-ILT-user" value="" id="ILT-user-checkbox" >
-				<label for="ILT-user-checkbox" >
-					<!-- <div class="arrow" ></div> -->
-					Register for Instructor led training
-				</label>
-				(
-				<a href="" class="white-color">What's this ?</a>
-				)
-
-				<div class="login-input-set">
+				<div class="login-input-set" >
 						
 					<input type="text" placeholder="Username / Email" class="basic-input-field" name="loginEmail" class="form-control" ng-model="loginEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
 					<p ng-show="userForm.loginEmail.$error.required && !userForm.loginEmail.$pristine" class="validation-error">Email is required.</p>
@@ -35,21 +31,37 @@
 					<p ng-show="userForm.loginPassword.$error.required && !userForm.loginPassword.$pristine" class="validation-error">Password is required.</p>
 	
 				</div>
-
-				<div id="ilt-name-fields">
-					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
-					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field">
-					<p class="warning-msg">Please provide your first and last name to enroll you in for ILT.</p>
+				<div class="label-container">
+				<input type="checkbox"  name="is-ILT-user" value="" id="ILT-user-checkbox" >
+					<label for="ILT-user-checkbox" >
+						<!-- <div class="arrow" ></div> -->
+						Am attending an Instructor Led Training</label>(
+					<a href="" class="white-color">What's this ?</a>
+					)
 				</div>
+
 				<div class="login-button-set">
 					<input type="submit" name="" value="Log In" class="login-button" ng-disabled="userForm.$invalid"/>
 					<!-- <input type="submit" name="" value="Log In" ng-class="{'login-button' : userForm.$valid}" ng-disabled="userForm.$invalid"/> -->
 					<!-- <span class="icon-arrow-down white-color"></span> -->
+				<!-- </div> -->
 				</div>
 				<a target="_blank" href="http://www.ptc.com/common/account/index.htm" class="plain-link">
 					Forgot password
 					<span class="icon-forward"></span>
 				</a>
+			</form>
+			<form class="login-form" ng-show="!showILT" autocomplete="on" name="ILTForm" novalidate>
+					<p class="">Thank you for joining us. Please provide your first and last name to enroll you in for ILT.</p>
+				<div id="ilt-name-fields">
+					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
+					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field">
+				</div>
+
+				<div class="login-button-set">
+					<input type="submit" name="" value="Join Class" class="login-button" ng-disabled="ILTform.$invalid"/>
+					<input type="submit" name="" value="Back" ng-click="showILT = !showILT" class="login-button"/>
+				</div>
 			</form>
 			<div class="info-bar">
 				<p>
@@ -92,8 +104,5 @@
 			//     }
 			// });
 		</script>
-
 	</body>
-
-
 </html>
