@@ -1,5 +1,6 @@
 // create angular app
 var validationApp = angular.module('validationApp', []);
+var showILT = false;
 
 // create angular controller
 validationApp.controller('mainController', function($scope) {

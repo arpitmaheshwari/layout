@@ -7,14 +7,12 @@
 		<script type="text/javascript" src="../js/libs/angular-1.2.6.js"></script>
 	</head>
 	<body ng-app="validationApp" ng-controller="mainController">
-		<script>
-		showILT = false;
-		</script>
+
 		<header>
 			<img class="banner-image" src="../images/precision-lms-logo.svg" alt="Precision-LMS">
 		</header>
-		<main>
 
+		<main>
 		<!-- Login form -->
 		<div>
 
@@ -23,7 +21,7 @@
 
 				<div class="login-input-set" >
 						
-					<input type="text" placeholder="Username / Email" class="basic-input-field" name="loginEmail" class="form-control" ng-model="loginEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
+					<input type="text" placeholder="Username / Email" class="basic-input-field" name="loginEmail"  ng-model="loginEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
 					<p ng-show="userForm.loginEmail.$error.required && !userForm.loginEmail.$pristine" class="validation-error">Email is required.</p>
             		<p ng-show="!userForm.loginEmail.$error.required && userForm.loginEmail.$error.pattern" class="validation-error">Please enter between A-z and 0-9.</p>
 
@@ -51,16 +49,24 @@
 					<span class="icon-forward"></span>
 				</a>
 			</form>
-			<form class="login-form" ng-show="!showILT" autocomplete="on" name="ILTForm" novalidate>
+			<form class="login-form" ng-show="!showILT" autocomplete="on" name="ILTForm" ng-submit="authenticate(ILTForm.$valid)" novalidate>
 					<p class="">Thank you for joining us. Please provide your first and last name to enroll you in for ILT.</p>
 				<div id="ilt-name-fields">
-					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
-					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field">
+<!-- 					<input type="text" name="login-username" value="" placeholder="First Name" class="basic-input-field">
+					<input type="text" name="login-username" value="" placeholder="Last Name" class="basic-input-field"> -->
+
+					<input type="text" placeholder="First Name" class="basic-input-field" name="loginFirstname"  ng-model="loginFirstname" ng-pattern="/^[A-z]+$/" required/>
+					<p ng-show="ILTForm.loginFirstname.$error.required && !ILTForm.loginFirstname.$pristine" class="validation-error">First Name is required.</p>
+            		<p ng-show="!ILTForm.loginFirstname.$error.required && ILTForm.loginFirstname.$error.pattern" class="validation-error">Please enter between A-z.</p>
+
+            		<input type="text" placeholder="Last Name" class="basic-input-field" name="loginLastname" ng-model="loginLastname" ng-pattern="/^[A-z]+$/" required/>
+					<p ng-show="ILTForm.loginLastname.$error.required && !ILTForm.loginLastname.$pristine" class="validation-error">Last Name is required.</p>
+            		<p ng-show="!ILTForm.loginLastname.$error.required && ILTForm.loginLastname.$error.pattern" class="validation-error">Please enter between A-z.</p>
 				</div>
 
 				<div class="login-button-set">
-					<input type="submit" name="" value="Join Class" class="login-button" ng-disabled="ILTform.$invalid"/>
-					<input type="submit" name="" value="Back" ng-click="showILT = !showILT" class="login-button"/>
+					<input type="submit" name="" value="Join Class" class="login-button" ng-disabled="ILTForm.$invalid"/>
+					<input type="button" name="" value="Back" ng-click="showILT = !showILT" class="login-button"/>
 				</div>
 			</form>
 			<div class="info-bar">
