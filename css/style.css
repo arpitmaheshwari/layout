@@ -1966,8 +1966,7 @@ body {
   height: 100%;
   text-rendering: optimizeLegibility;
   font-family: 'Open Sans' ,  sans-serif;
-  background: url("../images/bgleft.png") bottom left no-repeat, url("../images/bgright.png") bottom right no-repeat;
-  background-color: #34b29d; }
+  background-color: #009cde; }
 
 main {
   padding-bottom: 55px; }
@@ -1992,6 +1991,23 @@ main {
 .animate-leave.animate-leave-active {
   left: -100%; }
 
+@font-face {
+  font-family: 'android-7';
+  src: url("../fonts/android_7/android_7.ttf") format("truetype"); }
+@font-face {
+  font-family: 'batman-forever';
+  src: url("../fonts/batman_forever/batmfa__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'coalition';
+  src: url("../fonts/coalition/Coalition_v2..ttf") format("truetype"); }
+.styled-brand-name {
+  font-size: 9rem;
+  font-family: "coalition" , 'batman-forever' , 'android-7' , sans-serif;
+  position: fixed;
+  bottom: 0;
+  right: 3.3%;
+  color: white; }
+
 .login-button {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -2013,12 +2029,12 @@ main {
   		}
   	}*/ }
   .login-button:enabled {
-    background: #005e5d;
-    border: 2px solid #005e5d; }
+    background: #236192;
+    border: 2px solid #236192; }
     .login-button:enabled:hover {
-      border: 2px solid #005e5d; }
+      border: 2px solid #236192; }
     .login-button:enabled:active {
-      border: 2px outset #005e5d; }
+      border: 2px outset #236192; }
 
 .humble-checkbox {
   vertical-align: -10%; }
@@ -2033,7 +2049,7 @@ input[type='checkbox'] {
     cursor: pointer;
     position: relative;
     padding-left: 25px;
-    margin-right: 10px;
+    margin-right: 2px;
     color: white; }
     input[type='checkbox'] + label:before, input[type='checkbox'] + label:after {
       content: '';
@@ -2053,7 +2069,7 @@ input[type='checkbox'] {
     input[type='checkbox'] + label:after {
       color: #fff; }
   input[type='checkbox']:checked + label:before {
-    box-shadow: 0 0 0 10px #005e5d inset; }
+    box-shadow: 0 0 0 10px #236192 inset; }
 
 /*Checkbox Specific styles*/
 input[type='checkbox'] + label:before {

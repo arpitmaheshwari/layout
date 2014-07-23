@@ -1,5 +1,5 @@
 .login-button{
-	@include ptc-set-style($background : $tealDark , $width: 100% , $appearence: none , $padding:14px , $margin:0 0 15px);
+	@include ptc-set-style($background : $blueDark , $width: 100% , $appearence: none , $padding:14px , $margin:0 0 15px);
 	font-weight: bold;
 
 /*	&:disabled{

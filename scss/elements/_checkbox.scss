@@ -38,7 +38,7 @@ input[type='checkbox']{
     }
   }
   &:checked + label:before{
-     box-shadow: 0 0 0 10px $tealDark inset;    
+     box-shadow: 0 0 0 10px $blueDark inset;    
   }
 }
 /*Checkbox Specific styles*/

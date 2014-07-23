@@ -9,8 +9,8 @@ body{
 	height: 100%;
 	text-rendering: optimizeLegibility;
 	font-family: 'Open Sans' ,  sans-serif;	
-	background: url($base-image-path + "bgleft.png") bottom left no-repeat,url($base-image-path + "bgright.png") bottom right no-repeat;
-	background-color: $cyan;
+	// background: url($base-image-path + "bgleft.png") bottom left no-repeat,url($base-image-path + "bgright.png") bottom right no-repeat;
+	background-color: $blue;
 }
 main{
 	padding-bottom: $footer-height;

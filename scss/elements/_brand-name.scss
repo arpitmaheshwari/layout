@@ -1,0 +1,23 @@
+@font-face{
+	font-family: 'android-7';
+	src: url($base-font-path + 'android_7/android_7.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: 'batman-forever';
+	src: url($base-font-path + 'batman_forever/batmfa__.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'coalition';
+	src: url($base-font-path + 'coalition/Coalition_v2..ttf') format('truetype');
+}
+.styled-brand-name{
+
+	font-size:9rem;
+	font-family: "coalition" , 'batman-forever' , 'android-7' , sans-serif;
+	position: fixed;
+	bottom: 0;
+	right: 3.3%;
+	color: $white;
+
+}
