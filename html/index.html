@@ -47,10 +47,12 @@
 				<h4>Join Class</h4>
 				<div id="ilt-name-fields">
 
-					<input type="text" placeholder="Confirm Email" class="basic-input-field" name="confirmEmail"  ng-model="confirmEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
+					<p>Looks like you are joining us for the first time . You will be enrolled as <b>{{ userForm.loginEmail }} </b><a href="" ng-click="showILT = !showILT" class="white-color" > Change </a></p>
+
+<!-- 					<input type="text" placeholder="Confirm Email" class="basic-input-field" name="confirmEmail"  ng-model="confirmEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
 					<p ng-show="ILTForm.confirmEmail.$error.required && !ILTForm.confirmEmail.$pristine" class="validation-error">Email is required.</p>
             		<p ng-show="!ILTForm.confirmEmail.$error.required && ILTForm.confirmEmail.$error.pattern" class="validation-error">Please enter between A-z and 0-9.</p>
-            		<p ng-show="userForm.loginEmail.value != ILTForm.confirmEmail.value" class="validation-error">Email not matching. </p>
+            		<p ng-show="userForm.loginEmail.value != ILTForm.confirmEmail.value" class="validation-error">Email not matching. </p> -->
 
 					<input type="text" placeholder="First Name" class="basic-input-field" name="loginFirstname"  ng-model="loginFirstname" ng-pattern="/^[A-z]+$/" required/>
 					<p ng-show="ILTForm.loginFirstname.$error.required && !ILTForm.loginFirstname.$pristine" class="validation-error">First Name is required.</p>
@@ -60,15 +62,15 @@
 					<p ng-show="ILTForm.loginLastname.$error.required && !ILTForm.loginLastname.$pristine" class="validation-error">Last Name is required.</p>
             		<p ng-show="!ILTForm.loginLastname.$error.required && ILTForm.loginLastname.$error.pattern" class="validation-error">Please enter between A-z.</p>
 
-					<p>Looks like you are joining us for the first time . Please provide your first and last name to enroll you in for the class.</p>
+					<p> Please provide your first and last name to enroll you in for the class.</p>
 				</div>
 
 
 				<div class="login-button-set">
 					<input type="submit" name="" value="Join Class" class="login-button" ng-disabled="ILTForm.$invalid"/>
-					<a href="" ng-click="showILT = !showILT" class="plain-link" >No , I don't wish to enroll
+		<!-- 			<a href="" ng-click="showILT = !showILT" class="plain-link" >No , I don't wish to enroll
 					<span class="icon-forward"></span>
-					</a>
+					</a> -->
 				</div>
 			</form>
 		</main>
