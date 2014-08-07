@@ -17,8 +17,7 @@
 			<form class="login-form" ng-hide="showILT" autocomplete="on" name="userForm" ng-submit="isILTlogin && (showILT = !showILT) || authenticate(userForm.$valid) " novalidate>
 				<h4>Log In</h4>
 
-				<div class="login-input-set" >
-						
+				<div class="login-input-set" >						
 					<input type="text" placeholder="Username / Email" class="basic-input-field" name="loginEmail"  ng-model="loginEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
 					<p ng-show="userForm.loginEmail.$error.required && !userForm.loginEmail.$pristine" class="validation-error">Email is required.</p>
             		<p ng-show="!userForm.loginEmail.$error.required && userForm.loginEmail.$error.pattern" class="validation-error">Please enter between A-z and 0-9.</p>
@@ -30,7 +29,6 @@
 				<div class="label-container">
 				<input type="checkbox" ng-model="isILTlogin" name="isILTlogin" value="" id="ILT-user-checkbox" >
 					<label for="ILT-user-checkbox" >
-						<!-- <div class="arrow" ></div> -->
 						I am attending a live class</label>
 						<label>
 							( <a href="" class="white-color">What's this ?</a> )
@@ -39,9 +37,6 @@
 
 				<div class="login-button-set">
 					<input type="submit" name="" value="Log In" class="login-button" ng-disabled="userForm.$invalid"/>
-					<!-- <input type="submit" name="" value="Log In" ng-class="{'login-button' : userForm.$valid}" ng-disabled="userForm.$invalid"/> -->
-					<!-- <span class="icon-arrow-down white-color"></span> -->
-				<!-- </div> -->
 				</div>
 				<a target="_blank" href="http://www.ptc.com/common/account/index.htm" class="plain-link">
 					Forgot password
@@ -51,6 +46,11 @@
 			<form class="login-form" ng-hide="!showILT" autocomplete="on" name="ILTForm" ng-submit="authenticate(ILTForm.$valid)" novalidate>
 				<h4>Join Class</h4>
 				<div id="ilt-name-fields">
+
+					<input type="text" placeholder="Confirm Email" class="basic-input-field" name="confirmEmail"  ng-model="confirmEmail" ng-pattern="/^[A-z0-9@_.]+$/" required/>
+					<p ng-show="ILTForm.confirmEmail.$error.required && !ILTForm.confirmEmail.$pristine" class="validation-error">Email is required.</p>
+            		<p ng-show="!ILTForm.confirmEmail.$error.required && ILTForm.confirmEmail.$error.pattern" class="validation-error">Please enter between A-z and 0-9.</p>
+            		<p ng-show="userForm.loginEmail.value != ILTForm.confirmEmail.value" class="validation-error">Email not matching. </p>
 
 					<input type="text" placeholder="First Name" class="basic-input-field" name="loginFirstname"  ng-model="loginFirstname" ng-pattern="/^[A-z]+$/" required/>
 					<p ng-show="ILTForm.loginFirstname.$error.required && !ILTForm.loginFirstname.$pristine" class="validation-error">First Name is required.</p>
